@@ -1,0 +1,37 @@
+{
+  "label": "DEMO — SYNTHETIC DATA — CONCEPT PREVIEW",
+  "case": "DEMO-CE-001",
+  "field": "DEMO-F01",
+  "area": "30 illustrative hectares",
+  "cropRegion": "Fictional scenario; pilot crop and region to be confirmed",
+  "samples": [
+    {
+      "source": "DEMO-LAB-A",
+      "value": 18,
+      "unit": "mg/kg",
+      "date": "2026-04-12",
+      "method": "Olsen (P)",
+      "depth": "0–15 cm"
+    },
+    {
+      "source": "DEMO-LAB-B",
+      "value": 31,
+      "unit": "mg/kg",
+      "date": "2026-04-13",
+      "method": "Colwell (P)",
+      "depth": "0–10 cm"
+    }
+  ],
+  "exception": "Method/depth unverified; values may not be directly comparable",
+  "missing": [
+    "Confirmed source comparability",
+    "Local label/regulatory review",
+    "Grower and equipment permissions"
+  ],
+  "reviewer": "DEMO Mira Hale",
+  "decision": "Pending review",
+  "machineExport": "Disabled — no equipment commands",
+  "rates": "Withheld pending agronomist review",
+  "nextAction": "Verify source comparability before drafting",
+  "demoClock": "2026-04-20"
+}

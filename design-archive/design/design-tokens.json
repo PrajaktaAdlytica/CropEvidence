@@ -1,0 +1,60 @@
+{
+  "version": "1.0",
+  "status": "Design specification; not implemented",
+  "colors": {
+    "paper": "#F7F4EA",
+    "olive": "#39472C",
+    "matcha": "#D5E1BC",
+    "blush": "#F1CCD6",
+    "sky": "#CCDFEC",
+    "apricot": "#F3CEAD",
+    "coral": "#A8433C",
+    "warning-ink": "#77342D",
+    "white": "#FFFFFF",
+    "muted-ink": "#535C4B"
+  },
+  "typography": {
+    "display": {
+      "family": "Instrument Serif",
+      "fallback": "Georgia, serif",
+      "weight": 400
+    },
+    "body": {
+      "family": "Manrope",
+      "fallback": "system-ui, sans-serif",
+      "weight": [
+        400,
+        500,
+        600
+      ]
+    },
+    "desktop": {
+      "h1": "88/88",
+      "h2": "56/58",
+      "body": "17/27"
+    },
+    "mobile": {
+      "h1": "48/48",
+      "h2": "36/38",
+      "body": "16/25"
+    }
+  },
+  "layout": {
+    "maxContent": 1280,
+    "desktopWidth": 1440,
+    "mobileWidth": 390,
+    "desktopGutter": 80,
+    "mobileGutter": 20,
+    "cardRadius": 12,
+    "buttonHeight": 48,
+    "minTarget": 44
+  },
+  "motion": {
+    "hoverMs": 200,
+    "revealMs": 650,
+    "revealStaggerMs": 90,
+    "maxDesktopPinnedSequences": 2,
+    "heroPinMaxScrollVh": 140,
+    "reducedMotion": "static, natural flow, no smoothing or pins"
+  }
+}

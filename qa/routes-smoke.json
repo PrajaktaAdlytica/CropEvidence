@@ -1,0 +1,702 @@
+[
+  {
+    "route": "/",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "See beneath everyfield decision."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/products",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Five offers. One evidence trail."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/products/field-desk",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Make the field record inspectable."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/products/field-review",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Read the field.Review theevidence."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/products/field-proof",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Read the weather. Revisit the window."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/products/field-signal",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Make approval visible before export."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/products/field-report",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Close the season. Keep the evidence."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/why-change",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "The gaps between records become review work."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/solutions",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Start with the decision your advisor owns."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/solutions/independent-agronomists",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "One crop. One region. Your review."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/platform",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "One case. A traceable decision."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/evaluation",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Agree the evidence before the season."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/company",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Evidence before expansion."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/trust",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Access. Judgement. Control."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/features",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "The details make the case reviewable."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/integrations",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Permission before connection."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/results",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "How the concept will be evaluated."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/pricing",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Begin with a scoped, paid test."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/resources",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Methods before claims."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/resources/evidence-packet",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Keep the context with the decision."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/resources/pilot-protocol",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Pilot protocol"
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/resources/sources",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Research sources"
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/pilot",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Propose one evaluation."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/request-demo",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Walk through the evidence."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/contact",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Start with the question."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/sign-in",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Workspace access"
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/access-help",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Access help"
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/legal/privacy",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Privacy & limitations"
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/legal/terms",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Concept terms"
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/accessibility",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Accessibility"
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/demo",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Field review workspace"
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/demo/pilot",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "A fictional pilot, with visible gates."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/demo/cases/DEMO-CE-001",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "DEMO-CE-001 / DEMO-F01"
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/demo/cases/DEMO-CE-001/report",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "DEMO-CE-001 / DEMO-F01"
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/missing-page",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "This record isn’t here."
+    ],
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "route": "/",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "See beneath everyfield decision."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/products",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Five offers. One evidence trail."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/products/field-desk",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Make the field record inspectable."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/products/field-review",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Read the field.Review theevidence."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/products/field-proof",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Read the weather. Revisit the window."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/products/field-signal",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Make approval visible before export."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/products/field-report",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Close the season. Keep the evidence."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/why-change",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "The gaps between records become review work."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/solutions",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Start with the decision your advisor owns."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/solutions/independent-agronomists",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "One crop. One region. Your review."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/platform",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "One case. A traceable decision."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/evaluation",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Agree the evidence before the season."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/company",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Evidence before expansion."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/trust",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Access. Judgement. Control."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/features",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "The details make the case reviewable."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/integrations",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Permission before connection."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/results",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "How the concept will be evaluated."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/pricing",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Begin with a scoped, paid test."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/resources",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Methods before claims."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/resources/evidence-packet",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Keep the context with the decision."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/resources/pilot-protocol",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Pilot protocol"
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/resources/sources",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Research sources"
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/pilot",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Propose one evaluation."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/request-demo",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Walk through the evidence."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/contact",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Start with the question."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/sign-in",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Workspace access"
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/access-help",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Access help"
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/legal/privacy",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Privacy & limitations"
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/legal/terms",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Concept terms"
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/accessibility",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Accessibility"
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/demo",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "Field review workspace"
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/demo/pilot",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "A fictional pilot, with visible gates."
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/demo/cases/DEMO-CE-001",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "DEMO-CE-001 / DEMO-F01"
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/demo/cases/DEMO-CE-001/report",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "DEMO-CE-001 / DEMO-F01"
+    ],
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "route": "/missing-page",
+    "broken": [],
+    "footer": true,
+    "h1": [
+      "This record isn’t here."
+    ],
+    "overflow": false,
+    "width": 390
+  }
+]

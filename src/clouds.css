@@ -1,0 +1,25 @@
+/* Reuse the approved original cloud artwork across blue and blush chapters. */
+.site-v2 .cloud-section{position:relative;isolation:isolate}
+.evidence-clouds{position:absolute;inset:0;pointer-events:none;z-index:-1;overflow:hidden;border-radius:inherit}
+.evidence-clouds>img{position:absolute;max-width:none;margin:0;object-fit:contain;animation-play-state:paused!important}
+.evidence-clouds[data-running=true]>img{animation-play-state:running!important}
+.evidence-clouds>.cloud-far{width:100%;height:105%;right:-13%;top:-25%;opacity:.72;animation:cloud-drift-far 42s ease-in-out infinite alternate}
+.evidence-clouds>.cloud-near{width:95%;height:95%;left:-33%;bottom:-30%;opacity:.48;animation:cloud-drift-near 55s ease-in-out infinite alternate}
+.cloud-rose>.cloud-far{right:-19%;top:-28%;opacity:.64;animation-duration:49s}
+.cloud-rose>.cloud-near{left:-25%;bottom:-32%;opacity:.42;animation-duration:59s}
+/* Broad banks read as a background in shorter bands without covering their cards. */
+.warning-spread .cloud-far{object-fit:cover;object-position:right center;right:-12%;top:-40%;height:160%;opacity:.5}
+.editorial-process .cloud-near{left:-38%;bottom:-25%}
+.resources-chapter .cloud-far{right:-18%;top:-20%}
+.cloud-toggle{position:absolute;right:var(--gutter);bottom:20px;display:flex;gap:7px;align-items:center;font-size:10px;min-height:36px;z-index:5;padding:8px 11px;border:1px solid #53614440;background:#f7f4e9c9;border-radius:20px;color:#34452b}
+.cloud-toggle>img{width:12px;height:12px;margin:0;object-fit:contain}
+.cloud-toggle:hover{background:#fffdf3}
+.site-v2[data-motion=reduced] .cloud-toggle{display:none}
+@keyframes cloud-drift-far{from{transform:translate3d(-5%,0,0)}to{transform:translate3d(6%,3%,0)}}
+@keyframes cloud-drift-near{from{transform:translate3d(4%,2%,0)}to{transform:translate3d(-5%,-3%,0)}}
+@media(prefers-reduced-motion:reduce){.evidence-clouds>img{animation:none!important}.cloud-toggle{display:none}}
+.cloud-section:not(.evidence) .evidence-clouds>img{object-fit:cover;mask-image:linear-gradient(90deg,transparent,#000 12%,#000 84%,transparent),linear-gradient(0deg,transparent,#000 10%,#000 90%,transparent);mask-composite:intersect;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 84%,transparent),linear-gradient(0deg,transparent,#000 10%,#000 90%,transparent);-webkit-mask-composite:source-in}
+@media(max-width:700px){
+.cloud-section:not(.evidence) .evidence-clouds>.cloud-far{width:160%;height:auto;aspect-ratio:1.5;object-fit:contain;right:-35%;top:0}
+.cloud-section:not(.evidence) .evidence-clouds>.cloud-near{width:165%;height:auto;aspect-ratio:1.5;object-fit:contain;left:-45%;bottom:0}
+}

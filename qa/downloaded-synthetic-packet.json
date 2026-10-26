@@ -1,0 +1,71 @@
+{
+  "label": "DEMO \u2014 SYNTHETIC DATA \u2014 CONCEPT PREVIEW",
+  "version": "DEMO v1",
+  "caseId": "DEMO-CE-001",
+  "field": "DEMO-F01",
+  "illustrativeAreaHa": 30,
+  "crop": "Corn",
+  "region": "DEMO Alder County \u2014 fictional region",
+  "displayGeometry": {
+    "reference": "1536 \u00d7 1024 generated aerial; no geographic projection",
+    "equipmentCompatible": false,
+    "zones": [
+      {
+        "id": "A",
+        "points": "300,320 600,220 650,450 420,570 200,530 230,420"
+      },
+      {
+        "id": "B",
+        "points": "600,220 905,165 940,270 1070,430 1110,470 800,600 650,450"
+      },
+      {
+        "id": "C",
+        "points": "200,530 420,570 650,450 800,600 665,755 480,900 340,850 195,710"
+      }
+    ]
+  },
+  "operator": "DEMO Owen Reed",
+  "dataOwner": "DEMO Leah Finch",
+  "reviewer": "DEMO Mira Hale",
+  "sources": [
+    {
+      "id": "DEMO-CE-001-LAB-A",
+      "value": 18,
+      "unit": "mg/kg",
+      "method": "Olsen (P)",
+      "depth": "0\u201315 cm",
+      "collected": "2026-04-12"
+    },
+    {
+      "id": "DEMO-CE-001-LAB-B",
+      "value": 31,
+      "unit": "mg/kg",
+      "method": "Colwell (P)",
+      "depth": "0\u201310 cm",
+      "collected": "2026-04-13"
+    }
+  ],
+  "exception": "Method / depth unverified",
+  "missingness": [
+    "Qualified comparability review",
+    "Local label / regulatory assessment",
+    "Actual grower and equipment permission"
+  ],
+  "alternatives": [
+    "Method or depth difference",
+    "Previous handling",
+    "Sampling coverage"
+  ],
+  "reviewState": "Review recorded",
+  "reviewReason": "DEMO QA: reviewed the fictional source context; rates remain withheld.",
+  "checks": {
+    "source": true,
+    "rules": true,
+    "permission": true
+  },
+  "nextAction": "Verify sample comparability",
+  "demoDate": "2026-04-20",
+  "rates": "Withheld \u2014 illustrative workflow only",
+  "executedApplications": [],
+  "machineExport": "Disabled \u2014 no equipment commands"
+}

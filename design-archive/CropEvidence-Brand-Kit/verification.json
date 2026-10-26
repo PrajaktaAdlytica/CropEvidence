@@ -1,0 +1,21 @@
+{
+  "outlinedSvgMasters": 12,
+  "embeddedRasterOrFonts": false,
+  "transparentPngExports": 12,
+  "icoSizes": [
+    [
+      16,
+      16
+    ],
+    [
+      32,
+      32
+    ],
+    [
+      48,
+      48
+    ]
+  ],
+  "sourceSilhouetteIoU": 0.97808,
+  "method": "Threshold source top large lockup at 145/255; Potrace cubic outline tracing with 0.15 tolerance; geometry preserved; normalized flat olive #39472C. PNGs rendered from SVG, not resized from the source board."
+}

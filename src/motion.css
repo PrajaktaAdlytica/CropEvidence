@@ -1,0 +1,20 @@
+/* The header belongs to the full page, not the clipped hero scene. */
+.site-v2{--nav-height:90px}
+.site-v2>.site-header{position:sticky;top:0;z-index:100;width:100%;max-width:none;height:var(--nav-height);padding-inline:max(var(--gutter),calc((100% - 1312px)/2));background:#f7f4e9f2;border-bottom:1px solid #31412720;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transition:background-color .25s,box-shadow .25s}
+.site-v2>.site-header[data-scrolled=true]{box-shadow:0 5px 22px #26361f0d}
+.site-v2[data-page=home]>.site-header[data-scrolled=false]{background:transparent;border-bottom-color:transparent;backdrop-filter:none;-webkit-backdrop-filter:none}
+.site-v2[data-page=home] .hero{margin-top:calc(-1 * var(--nav-height));padding-top:var(--nav-height)}
+.site-v2 section[id],.site-v2 [id=features],.site-v2 [id=scorecard],.site-v2 #page-content{scroll-margin-top:calc(var(--nav-height) + 22px)}
+.site-v2 .product-menu{top:calc(var(--nav-height) - 8px)}
+.site-v2 .skip-link{z-index:120}
+/* Keyboard navigation always exposes the focused content, regardless of scroll timing. */
+.site-v2 [data-scroll-reveal]:focus-within{opacity:1!important;transform:none!important}
+@media(max-width:1100px){.site-v2{--nav-height:84px}.site-v2 .site-navigation.expanded{top:calc(var(--nav-height) - 8px);max-height:calc(100dvh - var(--nav-height) - 20px)}.site-v2 .product-menu{top:auto}}
+@media(max-width:700px){.site-v2{--nav-height:80px}}
+@media(prefers-reduced-motion:reduce){.site-v2>.site-header{transition:none}}
+
+/* The hero already reserves navbar space; other sections keep their reading offset. */
+.site-v2 #top,.site-v2 #intro{scroll-margin-top:0}
+
+html{scroll-padding-top:0}
+@media(max-width:1100px){.site-v2 .site-navigation.expanded{max-height:var(--navigation-available,calc(100dvh - var(--nav-height) - 20px))}}

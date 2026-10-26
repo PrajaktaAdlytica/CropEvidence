@@ -1,0 +1,1571 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CropEvidence — Website Blueprint</title><style>
+:root{--paper:#f6f3ea;--white:#fffefa;--ink:#20291f;--muted:#586052;--line:#d3d7c9;--olive:#485b37;--clay:#9b482d}*{box-sizing:border-box}html{scroll-padding-top:30px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif}a{color:var(--olive);text-underline-offset:4px}a:focus-visible,summary:focus-visible{outline:3px solid #6a42aa;outline-offset:4px}.sidebar{position:fixed;width:270px;inset:0 auto 0 0;padding:32px 24px;background:#edf0e4;border-right:1px solid var(--line);overflow:auto}.brand{font-size:22px;letter-spacing:-.7px;font-weight:650}.meta{font:11px/1.6 ui-monospace,monospace;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}.sidebar nav{margin-top:24px}.sidebar a{display:block;color:var(--muted);font-size:12px;line-height:1.45;text-decoration:none;padding:7px 0;border-bottom:1px solid #dce1d3}.sidebar a:hover{color:var(--ink);background:#e2e8d6}.sidebar .download{margin-top:24px;border:1px solid var(--olive);padding:10px;font-weight:600}main{margin-left:270px;padding:52px clamp(24px,5vw,80px) 80px;max-width:1800px}.cover{max-width:1180px;margin:auto}.eyebrow{font:12px ui-monospace,monospace;letter-spacing:1.6px;color:var(--olive);text-transform:uppercase}.cover h1{font-family:Georgia,serif;font-size:clamp(52px,6.5vw,96px);font-weight:400;line-height:1.03;letter-spacing:-3px;margin:22px 0}.cover .lead{font-size:22px;line-height:1.5;max-width:800px;color:var(--muted)}.status{display:inline-block;padding:6px 12px;border:1px solid var(--clay);color:var(--clay);font:11px ui-monospace,monospace;letter-spacing:.6px;margin:18px 0}.atlas{margin:28px 0 8px;border:1px solid var(--line);border-radius:12px;overflow:hidden}.atlas svg{display:block;width:100%;height:auto}.caption{font-size:12px;color:var(--muted)}.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:32px 0}.summary div{border-top:2px solid var(--olive);padding-top:14px}.summary b{display:block;font:28px Georgia,serif;margin-bottom:8px}.summary p{margin:0;font-size:14px;color:var(--muted)}.journey{padding:28px;background:var(--ink);color:var(--paper);border-radius:10px;margin:30px 0 70px}.journey .meta{color:#c5d1b5}.journey p{font:24px/1.5 Georgia,serif;margin:12px 0 0}article{max-width:1180px;margin:auto}article>h1,article>h2:first-of-type{display:none}article h2{font:400 40px/1.18 Georgia,serif;letter-spacing:-.8px;margin:76px 0 26px;padding-top:28px;border-top:2px solid var(--ink)}article h3{font-size:22px;line-height:1.3;margin:38px 0 18px}article p,article li{max-width:940px}article li{margin:8px 0}article blockquote{padding:16px 24px;border-left:3px solid var(--olive);background:#e7ecdd;margin:20px 0}article strong{font-weight:650}.table-scroll{overflow-x:auto;margin:28px 0;border:1px solid var(--line);border-radius:8px;background:var(--white)}table{border-collapse:collapse;width:100%;font-size:13px;line-height:1.55;min-width:720px}th{text-align:left;background:#e6ebdc;color:var(--ink);padding:15px 16px;vertical-align:top;font-weight:650}td{padding:15px 16px;border-top:1px solid var(--line);vertical-align:top;min-width:140px}tr:nth-child(even){background:#faf9f3}code{font-size:.9em;background:#e7ecdf;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}td code{white-space:normal}footer{margin-top:80px;padding-top:24px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}.mobile-nav{display:none}.print{float:right;padding:9px 14px;border:1px solid var(--olive);border-radius:4px;background:transparent;color:var(--olive);font:inherit;font-size:12px;cursor:pointer}summary{cursor:pointer}a[href^="http"]{overflow-wrap:anywhere}@media(max-width:1050px){.sidebar{width:225px;padding:24px 18px}main{margin-left:225px;padding:36px 26px}.cover h1{font-size:64px}.summary{gap:12px}.summary b{font-size:24px}}@media(max-width:760px){.sidebar{display:none}main{margin:0;padding:24px 20px}.cover h1{font-size:52px;letter-spacing:-1.5px}.cover .lead{font-size:19px}.summary{grid-template-columns:1fr;gap:24px}.summary b{font-size:26px}.atlas{margin-top:24px}.atlas svg{min-width:650px}.atlas{overflow:auto}.mobile-nav{display:block;padding:15px;border:1px solid var(--line);margin:24px 0}.mobile-nav a{display:block;font-size:13px;padding:6px 0}article h2{font-size:32px;margin-top:54px}article h3{font-size:21px}.journey{padding:22px;margin-bottom:40px}.journey p{font-size:22px}.print{display:none}table{font-size:13px}}@media print{.sidebar,.mobile-nav,.print{display:none}main{margin:0;padding:0}.cover h1{font-size:64px}.journey{margin-bottom:30px}article h2{break-before:page;margin-top:0;font-size:30px}article h3{break-after:avoid}table{min-width:0;font-size:9px}td,th{min-width:0;padding:7px}tr{break-inside:avoid}.table-scroll{overflow:visible}a{color:inherit}body{font-size:11px;background:white}.atlas svg{min-width:0}@page{size:A4;margin:15mm}}
+</style></head><body><aside class="sidebar"><div class="brand">CropEvidence</div><div class="meta">Website blueprint · 26.10.2026</div><nav aria-label="Document chapters"><a href="#01-scope-priority-and-naming">01. Scope, priority and naming</a><a href="#02-buyer-positioning-and-proof">02. Buyer, positioning and proof</a><a href="#03-research-and-visual-references">03. Research and visual references</a><a href="#04-three-visual-territories">04. Three visual territories</a><a href="#05-product-inventory-and-copy-ready-offer-cards">05. Product inventory and copy-ready offer cards</a><a href="#06-information-architecture">06. Information architecture</a><a href="#07-homepage-copy-and-section-by-section-storyboard">07. Homepage: copy and section-by-section storyboard</a><a href="#08-dedicated-page-structures-and-unique-heroes">08. Dedicated page structures and unique heroes</a><a href="#09-motion-choreography-and-interaction-specifications">09. Motion choreography and interaction specifications</a><a href="#10-simulated-workflow-and-state-model">10. Simulated workflow and state model</a><a href="#11-data-dictionary">11. Data dictionary</a><a href="#12-sample-evidence-packet">12. Sample evidence packet</a><a href="#13-pilot-ask-protocol-and-scorecard">13. Pilot ask, protocol and scorecard</a><a href="#14-lead-capture-privacy-and-access">14. Lead capture, privacy and access</a><a href="#15-analytics-event-plan">15. Analytics event plan</a><a href="#16-acquisition-and-ad-variants">16. Acquisition and ad variants</a><a href="#17-responsive-screenshots-and-asset-brief">17. Responsive screenshots and asset brief</a><a href="#18-risk-and-boundary-register">18. Risk and boundary register</a><a href="#19-build-handoff-and-quality-gates">19. Build handoff and quality gates</a><a href="#20-brief-to-website-traceability">20. Brief-to-website traceability</a><a href="#21-decisions-still-needed-before-implementation-or-publication">21. Decisions still needed before implementation or publication</a><a href="#22-primary-source-register">22. Primary-source register</a></nav><a class="download" href="CropEvidence-Website-Blueprint.md" download>Download editable Markdown ↓</a></aside><main><section class="cover"><button class="print" onclick="window.print()">Print document</button><div class="eyebrow">Concept 39 / Research + architecture</div><h1>Evidence becomes<br>a design language.</h1><p class="lead">A premium, scroll-led company experience for CropEvidence. Five proposed offers. One accountable reviewer. A complete path from first impression to a permissioned evaluation.</p><div class="status">SPECIFICATION ONLY · NO WEBSITE OR PRODUCT BUILT</div><div class="atlas"><svg viewBox="0 0 1100 490" role="img" aria-labelledby="atlas-title atlas-desc"><title id="atlas-title">The proposed CropEvidence visual story</title><desc id="atlas-desc">An original fictional field diagram connects source records to a conflict, a reviewer and a labeled packet. This is a planning illustration, not a product screenshot.</desc><defs><pattern id="lines" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><path d="M0 0V12" stroke="#9b482d" stroke-width="2" opacity=".25"/></pattern></defs><rect width="1100" height="490" fill="#e6eadb"/><g fill="none" stroke="#b9c5a8" opacity=".65"><path d="M-30 80Q180 20 360 100T720 100T1120 40"/><path d="M-30 120Q180 60 360 140T720 140T1120 80"/><path d="M-30 160Q180 100 360 180T720 180T1120 120"/><path d="M-30 200Q180 140 360 220T720 220T1120 160"/><path d="M-30 240Q180 180 360 260T720 260T1120 200"/><path d="M-30 280Q180 220 360 300T720 300T1120 240"/><path d="M-30 320Q180 260 360 340T720 340T1120 280"/></g><text x="35" y="40" fill="#485b37" font-size="12" font-family="monospace" letter-spacing="2">DIRECTION A / THE EVIDENCE ATLAS</text><g transform="translate(65 70)"><path d="M55 60L310 20L435 125L385 300L160 345L20 225Z" fill="#c6d1b3" stroke="#485b37" stroke-width="2"/><path d="M55 60L205 37L230 190L20 225Z" fill="#dce4cb" stroke="#485b37"/><path d="M205 37L310 20L435 125L385 300L230 190Z" fill="url(#lines)" stroke="#485b37"/><path d="M20 225L230 190L385 300L160 345Z" fill="#b4c29e" stroke="#485b37"/><g font-family="monospace" font-size="14" fill="#20291f"><text x="100" y="148">ZONE 01</text><text x="294" y="165">ZONE 02</text><text x="170" y="278">ZONE 03</text></g><circle cx="295" cy="100" r="8" fill="#9b482d"/><circle cx="295" cy="100" r="16" fill="none" stroke="#9b482d"/></g><path d="M360 170H560V138H620" fill="none" stroke="#9b482d" stroke-width="2"/><g transform="translate(620 95)"><rect width="430" height="92" rx="8" fill="#fffefa"/><text x="24" y="30" font-family="monospace" font-size="12" fill="#9b482d">01 / CONFLICT VISIBLE</text><text x="24" y="61" font-size="20" fill="#20291f" font-family="Georgia">Two tests. Context unresolved.</text><path d="M24 113H407" stroke="#8b987b"/><rect y="132" width="430" height="92" rx="8" fill="#fffefa"/><text x="24" y="161" font-family="monospace" font-size="12" fill="#485b37">02 / REVIEWER REQUIRED</text><text x="24" y="192" font-size="20" fill="#20291f" font-family="Georgia">Keep the decision with the agronomist.</text><rect y="244" width="430" height="62" rx="8" fill="#20291f"/><text x="24" y="280" font-size="15" fill="#fffefa" font-family="sans-serif">03 / Reviewer packet · Machine export disabled</text></g><text x="35" y="462" fill="#485b37" font-size="12" font-family="monospace">SCHEMATIC ONLY · SYNTHETIC FIELD · NOT A PRODUCT SCREENSHOT</text></svg></div><p class="caption">Original planning illustration. Recommended territory: The Evidence Atlas. Not a screenshot or verified brand asset.</p><div class="summary"><div><b>Five distinct products</b><p>Field Desk, Field Review, Field Proof, Field Signal and Field Report each receive a complete page and individual commercial scope.</p></div><div><b>Two signature sequences</b><p>A horizontal product atlas and a vertical evidence-review chapter, supported by unique section visuals and readable still states.</p></div><div><b>One honest boundary</b><p>Synthetic records, explicit uncertainty and human review. No operating-product, customer, yield or machinery-control claim.</p></div></div><div class="journey"><div class="meta">The buyer journey</div><p>Offer → Example artifact → Qualification → Discovery → Blinded retrospective → Paid pilot SOW → Go / no-go</p></div><details class="mobile-nav"><summary>Browse the 22 chapters</summary><a href="#01-scope-priority-and-naming">01. Scope, priority and naming</a><a href="#02-buyer-positioning-and-proof">02. Buyer, positioning and proof</a><a href="#03-research-and-visual-references">03. Research and visual references</a><a href="#04-three-visual-territories">04. Three visual territories</a><a href="#05-product-inventory-and-copy-ready-offer-cards">05. Product inventory and copy-ready offer cards</a><a href="#06-information-architecture">06. Information architecture</a><a href="#07-homepage-copy-and-section-by-section-storyboard">07. Homepage: copy and section-by-section storyboard</a><a href="#08-dedicated-page-structures-and-unique-heroes">08. Dedicated page structures and unique heroes</a><a href="#09-motion-choreography-and-interaction-specifications">09. Motion choreography and interaction specifications</a><a href="#10-simulated-workflow-and-state-model">10. Simulated workflow and state model</a><a href="#11-data-dictionary">11. Data dictionary</a><a href="#12-sample-evidence-packet">12. Sample evidence packet</a><a href="#13-pilot-ask-protocol-and-scorecard">13. Pilot ask, protocol and scorecard</a><a href="#14-lead-capture-privacy-and-access">14. Lead capture, privacy and access</a><a href="#15-analytics-event-plan">15. Analytics event plan</a><a href="#16-acquisition-and-ad-variants">16. Acquisition and ad variants</a><a href="#17-responsive-screenshots-and-asset-brief">17. Responsive screenshots and asset brief</a><a href="#18-risk-and-boundary-register">18. Risk and boundary register</a><a href="#19-build-handoff-and-quality-gates">19. Build handoff and quality gates</a><a href="#20-brief-to-website-traceability">20. Brief-to-website traceability</a><a href="#21-decisions-still-needed-before-implementation-or-publication">21. Decisions still needed before implementation or publication</a><a href="#22-primary-source-register">22. Primary-source register</a></details></section><article><h1 id="cropevidence">CropEvidence</h1><h2 id="website-architecture-visual-direction-and-validation-demo-specification">Website architecture, visual direction and validation-demo specification</h2><p>26 October 2026 · Concept 39 · Version 1.0 · Specification only</p>
+<p><strong>Recommended direction:</strong> an editorial field atlas: warm paper, dark soil, original field geometry and a precise evidence workbench. The visitor follows one field from incomplete records to a reviewable decision. Five distinct proposed products remain visible throughout the buying journey.</p>
+<p><strong>Status:</strong> research-stage concept, synthetic demo planned, no operating product established. The $100,000 ambition is a design and commercial aspiration supplied by the user, not verified product value, accepted pricing, development budget or revenue. No build, deployment, account creation, campaign, payment, domain purchase or Notion activity was performed for this specification.</p>
+<h2 id="01-scope-priority-and-naming">01. Scope, priority and naming</h2><p>The user&#39;s current request is research, information architecture and website structure. The uploaded master guide governs quality, page coverage, branding and motion. The supplied concept brief supplies the complete product, buyer, evaluation and demo requirements. Its one-landing-page suggestion is expanded into the master guide&#39;s connected multi-page experience while retaining that landing page&#39;s complete narrative. Its spec-only boundary matches this request.</p>
+<p>The guide itself says the brief comes first; the user&#39;s explicit instruction for this task says the brief must not override the guide. This document follows the current user instruction. There is no need to sacrifice the brief&#39;s honesty requirements to meet the guide&#39;s visual or architectural standard.</p>
+<ul>
+<li><strong>Public brand:</strong> CropEvidence, as explicitly supplied by the user. Name, trademark and domain ownership remain unverified.</li>
+<li><strong>Historical identifiers:</strong> Concept 39 / Agriculture Input Agent / Category D / Crop Waypoint. Preserve in internal records only; do not mix brand names in public navigation.</li>
+<li><strong>Legacy domain:</strong> cropwaypoint.com and its historical RDAP 404 belong to the old brief. They establish neither current availability nor ownership, and say nothing about CropEvidence domains.</li>
+<li><strong>Sector:</strong> energy, industry and resilience portfolio; the buyer-facing category is agronomy decision support. Do not add unrelated energy-management features.</li>
+<li><strong>No supplied video:</strong> the referenced video and screenshots/39-website-preview.png were not accessible attachments. Their existence in prose is not evidence of an implemented or deployed product.</li>
+<li><strong>Deliverable distinction:</strong> the companion HTML is a readable planning document, not the CropEvidence website or a product screenshot.</li>
+</ul>
+<p>Every substantive brief requirement is mapped in section 20. Public information, simulated product behavior, and internal validation work are retained in appropriate places rather than publishing employee instructions as marketing copy.</p>
+<h2 id="02-buyer-positioning-and-proof">02. Buyer, positioning and proof</h2><p><strong>Primary buyer and accountability owner:</strong> independent agronomy service lead serving growers in one crop and region. Grower/co-op procurement is separate. Recruit a named day-to-day operator and data/integration owner. Obtain the relevant procurement, grower and legal permissions before real records are used.</p>
+<p><strong>Primary job:</strong> inspect inconsistent field evidence, draft zone-specific input options, and document a human-owned review decision before any permitted future equipment export.</p>
+<p><strong>Proposed distinction to test:</strong> a readable chain from soil/history evidence to exceptions, rationale, reviewer disposition and an exportable reviewer packet. This is not an established competitive advantage.</p>
+<p><strong>Vision:</strong> advisors can explain each field-specific recommendation and obtain grower approval before equipment export.</p>
+<p><strong>Mission:</strong> help independent agronomy service leads move from fragmented evidence to a defensible human-approved decision, preserving provenance and uncertainty.</p>
+<p><strong>Problem:</strong> soil assays, historical applications, zones and weather differ in freshness and quality. A generic rate does not resolve conflicting samples, missing permissions, local judgment or label constraints.</p>
+<p><strong>Audience separation:</strong> growers, cooperatives, multi-farm operators, input dealers, crop consultants and equipment dealers can be participants, acquisition channels or future buyer hypotheses. They must not be counted as one pooled demand segment. One primary buyer journey is designed now; no duplicate co-op/grower sales pages implying validated demand.</p>
+<p><strong>Existing alternatives:</strong> CropX, Deere precision application, agronomist recommendations, soil laboratories, co-op retailers and extension guidance. CropX already describes variable-rate application maps and machinery export; Deere already describes targeted spraying. These are category context, not CropEvidence integrations or endorsements. <a href="https://cropx.com/variable-rate-application/">CropX VRA</a> · <a href="https://www.deere.com/en-us/products-solutions/sprayers-and-applicators/see-spray-select">Deere See &amp; Spray Select</a></p>
+<p><strong>Proof policy:</strong> show a labeled synthetic artifact, the proposed evaluation protocol, and precise limitations. No fabricated logos, quotes, customers, team biographies, certifications, uptime, integrations, yield uplift, saved money, ARR or deployment claims. The brief assesses incumbent-capability evidence as high and independent uplift evidence as low; preserve that as a research assessment, not a quantified study result.</p>
+<h2 id="03-research-and-visual-references">03. Research and visual references</h2><p>Research used the configured Perplexity high research preset and direct browser inspection. References were reviewed on 26 October 2026. Browser observations below are a desktop sample at approximately 1280 × 720, not a full cross-device audit. Proposals are explicitly separated from observations.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Evidence from this session</th>
+<th>What CropEvidence should adopt</th>
+<th>What to avoid borrowing</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://watershed.com/en-GB">Watershed homepage</a></td>
+<td>Browser inspected hero, vertical sections and feature rail. White hero with oversized sans-serif type and layered imagery; sticky white navigation; navy product section; return to white feature cards. Next-feature click moves the horizontal rail. Product-step media changed independently of scrolling.</td>
+<td>Alternating editorial and technical environments; clear numbered workflow; cropped product artifacts; deliberate horizontal browsing with visible controls.</td>
+<td>Its blue identity, customer proof, AI claims, or an assertion that its horizontal rail is scroll-scrubbed.</td>
+</tr>
+<tr>
+<td><a href="https://linear.app/">Linear homepage</a></td>
+<td>Browser inspected hero and intake chapter. Near-black surface, large restrained type, dense interface, fine borders, generous chapter spacing and fixed navigation. Initial hero render appeared before content settled.</td>
+<td>Credible UI density, owner/activity context, disciplined visual hierarchy. Reserve dark surfaces for focused workbench moments.</td>
+<td>The all-dark brand, agent-autonomy language, customer strip, tiny low-contrast labels or initial content blanking.</td>
+</tr>
+<tr>
+<td><a href="https://linear.app/intake">Linear Intake</a></td>
+<td>Browser inspected hero and page structure. Perspective interface imagery behind a large product-specific title; deeper sections address intake, triage and requests with different UI examples.</td>
+<td>Dedicated product heroes built around each module&#39;s own artifact; section depth beyond a repeated card grid.</td>
+<td>Reusing exactly the same hero for all five CropEvidence offers.</td>
+</tr>
+<tr>
+<td><a href="https://www.apple.com/airpods-pro/">Apple AirPods Pro</a></td>
+<td>Browser inspected opening and consecutive scroll positions. Persistent local navigation, large isolated product object, broad pale stages and subsequent imagery. Several media assets reported playback failure; the sequence was only partially rendered.</td>
+<td>One focal object per chapter, strong scale changes, local product navigation and good still-image fallbacks.</td>
+<td>Treating the partially rendered visit as verification of exact animation timings or copying hardware imagery.</td>
+</tr>
+<tr>
+<td><a href="https://gsap.com/scroll/">GSAP scroll showcase</a></td>
+<td>Browser inspected sequential scroll positions. The pin/scrub example holds a rotating graphic while explanatory copy progresses; its code and start/end markers make the mechanism explicit.</td>
+<td>A finite pinned evidence story with measured entry/exit, reversible progress and stable labels.</td>
+<td>The showcase&#39;s playful palette or excessive animation density.</td>
+</tr>
+<tr>
+<td><a href="https://stripe.com/payments">Stripe Payments</a></td>
+<td>Perplexity content research; motion not browser verified. Multiple concrete UI examples explain capabilities at different depths.</td>
+<td>Product-specific diagrams and one explanatory artifact per capability.</td>
+<td>Claiming its current scroll mechanics were observed; copying payment UI or gradients.</td>
+</tr>
+<tr>
+<td><a href="https://www.regrow.ag/platform">Regrow platform</a></td>
+<td>Perplexity content research; visual motion not browser verified. Connects scientific foundation, planning, reporting and collaboration.</td>
+<td>Agricultural context paired with explicit methodology and limits.</td>
+<td>Transferring scientific validation or certification claims to this concept.</td>
+</tr>
+<tr>
+<td><a href="https://cropx.com/solutions/enterprise-farm-management/">CropX enterprise management</a></td>
+<td>Perplexity factual/category research; no motion audit. Broad field/data/stakeholder structure.</td>
+<td>Operational specificity and recognition of existing alternatives.</td>
+<td>Broadening CropEvidence into an established farm-management or hardware-control platform.</td>
+</tr>
+</tbody></table></div>
+<h3 id="horizontal-versus-vertical-reference-findings">Horizontal versus vertical reference findings</h3><p>Watershed supplies an observed <strong>user-controlled horizontal rail</strong>, GSAP supplies an observed <strong>vertical pinned sequence</strong>, and the official ScrollTrigger documentation supplies the mechanism for <strong>vertical-scroll-driven horizontal translation</strong>. These are different interactions. A carousel does not establish that a site hijacks wheel scrolling. <a href="https://gsap.com/docs/v3/Plugins/ScrollTrigger/">ScrollTrigger documentation</a></p>
+<p>For CropEvidence, use normal vertical scrolling as the foundation, a short horizontal product portfolio passage on sufficiently large screens, and one separate vertical evidence sequence. Keep each product directly reachable without watching either animation. No evidence supports claiming that every reference page or its hover behavior was exhaustively tested.</p>
+<h2 id="04-three-visual-territories">04. Three visual territories</h2><div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Territory</th>
+<th>Composition and material</th>
+<th>Signature story</th>
+<th>Typography direction</th>
+<th>Fit</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>A. The Evidence Atlas — recommended</strong></td>
+<td>Warm ivory editorial spreads; olive field geometry; rust annotations; occasional dark-soil workbench.</td>
+<td>A field boundary acquires source pins, exposes a conflict and becomes a review packet.</td>
+<td>Expressive display serif, contemporary sans body, mono provenance.</td>
+<td>Balances agriculture, evidence and premium enterprise clarity.</td>
+</tr>
+<tr>
+<td>B. The Agronomy Instrument</td>
+<td>Pale technical drafting sheets, dense measurement rails, dark graphite inspection bays.</td>
+<td>Cross-sectional evidence layers align against a reviewer gate.</td>
+<td>Sans-led headings and monospaced specimen labels.</td>
+<td>More industrial and exacting; less warm and editorial.</td>
+</tr>
+<tr>
+<td>C. The Seasonal Journal</td>
+<td>Large licensed seasonal photography, generous margins and report-like spreads.</td>
+<td>Preparation, review, season observation and retrospective become four editorial chapters.</td>
+<td>Large serif titles and quiet utilitarian captions.</td>
+<td>Warmest and most agricultural; needs care to keep product specificity strong.</td>
+</tr>
+</tbody></table></div>
+<p>Proceed with A as a recommendation for planning, not as a claim of user approval. B and C are genuine alternative compositions, not palette swaps.</p>
+<h3 id="brand-foundation-for-direction-a">Brand foundation for direction A</h3><p><strong>Character:</strong> observant, exact, grounded, candid, considered.</p>
+<p><strong>Logo proposal:</strong> an original open field-boundary mark containing three contour segments and one evidence point. The open edge suggests a record awaiting review; avoid checkmark certification symbolism, a generic sprout, or tractor icon. Wordmark: CropEvidence in a carefully spaced sans-serif, with a custom optical treatment at the p/E junction. Favicon uses the simplified boundary and point only.</p>
+<p><strong>Future asset handoff:</strong> editable vector source; primary/reverse/monochrome SVG marks; horizontal/compact lockups; SVG and ICO favicon; 16/32/48/192/512px PNGs; 180px Apple icon; social image; manifest. Clear space at least one mark-point diameter, wordmark minimum 120px, standalone mark minimum 20px; redraw the 16px favicon for pixel clarity. These are specified assets, not completed or trademark-cleared assets.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Proposed value</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Paper</td>
+<td>#F6F3EA</td>
+<td>Main page ground</td>
+</tr>
+<tr>
+<td>Porcelain</td>
+<td>#FFFEFA</td>
+<td>Forms, tables, evidence sheets</td>
+</tr>
+<tr>
+<td>Soil / primary ink</td>
+<td>#20291F</td>
+<td>Main type, dark stages</td>
+</tr>
+<tr>
+<td>Olive</td>
+<td>#485B37</td>
+<td>Primary action and field outlines</td>
+</tr>
+<tr>
+<td>Sage</td>
+<td>#DDE4D2</td>
+<td>Secondary panels and source layers</td>
+</tr>
+<tr>
+<td>Straw</td>
+<td>#E9D69E</td>
+<td>Illustration accents, never untested body text</td>
+</tr>
+<tr>
+<td>Clay</td>
+<td>#9B482D</td>
+<td>Exceptions and editorial annotation</td>
+</tr>
+<tr>
+<td>Muted ink</td>
+<td>#586052</td>
+<td>Secondary copy on light backgrounds</td>
+</tr>
+<tr>
+<td>Border</td>
+<td>#D3D7C9</td>
+<td>Subtle separators; stronger borders for controls</td>
+</tr>
+<tr>
+<td>Error</td>
+<td>#A52B34</td>
+<td>Error icon plus written explanation</td>
+</tr>
+<tr>
+<td>Focus</td>
+<td>#6A42AA</td>
+<td>Visible focus outline with contrasting offset</td>
+</tr>
+</tbody></table></div>
+<p>Status always includes a word/icon/pattern. A sage fill does not mean approval. Contrast must be measured on final pairings; this palette is not a completed accessibility certification.</p>
+<p><strong>Typography proposal:</strong> Instrument Serif regular/italic for short display headlines; Manrope 400/500/600/700 from the Google Fonts OFL distribution for body/UI; IBM Plex Mono 400/500 for IDs, timestamps and units. Pin font versions and preserve license files. Manrope V5 from the creator has different terms; do not assume it is the same distribution. <a href="https://github.com/Instrument/instrument-serif">Instrument Serif</a> · <a href="https://github.com/google/fonts/blob/main/ofl/manrope/OFL.txt">Manrope OFL</a> · <a href="https://github.com/IBM/plex">IBM Plex</a></p>
+<p>Type scale: hero 88/88 desktop, 48/50 mobile; H2 56/60 and 36/40; H3 28/34 and 24/30; body 18/28 and 16/25; data 14/20; labels 13/18 minimum. Serif is reserved for editorial statements, never long tables. Headline max 14–18 characters per line where meaningful; body max 65–72 characters. Do not enforce line breaks that break narrow screens.</p>
+<p><strong>Layout:</strong> 1280px content maximum, 1440px visual maximum, 720px reading column; 64px desktop gutters, 32px tablet, 20px mobile. Twelve-column desktop, six-column tablet, four-column mobile. Spacing 4/8/12/16/24/32/48/64/96/128. Chapter padding 112–144px desktop and 64–80px mobile. Primary buttons 48px high; mobile controls at least 44 × 44px. Radius 6px controls, 12px sheets, 20px media; avoid making every surface pill-shaped.</p>
+<p><strong>Imagery:</strong> original schematic polygons rather than copied satellite tiles; crop/region-appropriate licensed field photographs for atmosphere only. Preserve license/creator records. Do not imply an atmospheric photo is a customer&#39;s field. Use subtle paper texture away from body copy, no constantly moving grain. Draw editable SVG diagrams with attached connectors, legends and accessible text equivalents. Product screenshots must come from the later built demo; generated art must never impersonate working software evidence.</p>
+<h2 id="05-product-inventory-and-copy-ready-offer-cards">05. Product inventory and copy-ready offer cards</h2><p>Public names below replace only the legacy brand prefix. The five responsibilities, order and prices are preserved. The original Field Proof/Field Signal names are not silently swapped; subtitles disambiguate them.</p>
+<p><strong>Shared badge:</strong> Proposed module · Pilot price hypothesis · Not an active checkout.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>ID / product</th>
+<th>Copy-ready card</th>
+<th>Included artifact</th>
+<th>Proposed price hypothesis</th>
+<th>CTA / route</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>O1 · CropEvidence Field Desk</td>
+<td><strong>Start with evidence you can inspect.</strong> Bring soil tests and field history into a source-linked review, with timestamps, missing information and conflicts exposed.</td>
+<td>Intake inventory, unit/method checks, missingness register and QC notes.</td>
+<td>$25 / field / season</td>
+<td>Explore Field Desk → <code>/products/field-desk</code></td>
+</tr>
+<tr>
+<td>O2 · CropEvidence Field Review</td>
+<td><strong>Draft a zone plan with its reasoning attached.</strong> Examine proposed inputs beside their source evidence, assumptions and unresolved questions before an agronomist decides.</td>
+<td>Zone draft, alternative explanations, rationale and reviewer queue.</td>
+<td>$50 / field / season</td>
+<td>Explore Field Review → <code>/products/field-review</code></td>
+</tr>
+<tr>
+<td>O3 · CropEvidence Field Proof</td>
+<td><strong>See when timing assumptions change.</strong> Review weather and timing exceptions with a dated source and a named next action.</td>
+<td>Exception timeline, freshness flags and reviewer disposition.</td>
+<td>$10 / field / month in season</td>
+<td>Explore Field Proof → <code>/products/field-proof</code></td>
+</tr>
+<tr>
+<td>O4 · CropEvidence Field Signal</td>
+<td><strong>Review the prescription before any export.</strong> Inspect a proposed map and its approval requirements. The concept demo keeps machine export disabled.</td>
+<td>Prescription preview, approval checklist and illustrative export manifest.</td>
+<td>$35 / field</td>
+<td>Explore Field Signal → <code>/products/field-signal</code></td>
+</tr>
+<tr>
+<td>O5 · CropEvidence Field Report</td>
+<td><strong>Close the season with a traceable account.</strong> Compare permitted application and outcome records with the agreed evaluation protocol, exposing gaps and confounders.</td>
+<td>Application/outcome comparison and economic retrospective, when permissioned records exist.</td>
+<td>$75 / field</td>
+<td>Explore Field Report → <code>/products/field-report</code></td>
+</tr>
+</tbody></table></div>
+<p>Pricing copy: <strong>“These figures are interview prompts for separately scoped pilot offers. They are not established market rates, vendor quotes or current purchasable plans. Final scope, permissions, services and seasonal terms require a reviewed proposal.”</strong> No bundled five-tab CRM package; no fabricated annual enterprise price; no savings guarantee. Select one module for the first pilot. A whole-suite guided conversation remains possible without selling all five as a validated bundle.</p>
+<h2 id="06-information-architecture">06. Information architecture</h2><h3 id="primary-navigation">Primary navigation</h3><p>Products · Platform · Solutions · Evaluation · Pricing · Resources · Company. Right side: Sign in; <strong>Request a paid evaluation</strong>. “Explore the simulated demo” is a distinct secondary action, never a disguised live trial.</p>
+<p>Products mega menu exposes all five names, short responsibilities and <code>/products</code>. Platform includes capabilities, data/permissions and trust. Resources includes methodology, example evidence packet and source references. Company includes About and Contact. Menu opens by click or keyboard; hover may preview but cannot be required. Escape closes and returns focus. Mobile drawer uses the same destinations, focus management and normal page scrolling after dismissal.</p>
+<h3 id="sitemap-and-route-responsibilities">Sitemap and route responsibilities</h3><div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Page purpose / core content</th>
+<th>Primary conversion</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>/</code></td>
+<td>Complete buyer narrative, all five products, artifact, evaluation, limitations and price entry.</td>
+<td>Request a paid evaluation</td>
+</tr>
+<tr>
+<td><code>/why-change</code></td>
+<td>Fragmented evidence, freshness, incompatible samples, permissions, accountability.</td>
+<td>Inspect the example conflict</td>
+</tr>
+<tr>
+<td><code>/solutions</code></td>
+<td>Independent advisor workflow; three job-based use cases without pooling buyer segments.</td>
+<td>Choose the first workflow</td>
+</tr>
+<tr>
+<td><code>/solutions/independent-agronomists</code></td>
+<td>Buyer lead, operator and data owner; one crop/region; seasonal evaluation.</td>
+<td>Qualify an evaluation</td>
+</tr>
+<tr>
+<td><code>/products</code></td>
+<td>Five separate offers with scope, outputs, relationship and indicative pricing.</td>
+<td>Select one pilot module</td>
+</tr>
+<tr>
+<td><code>/products/field-desk</code></td>
+<td>Soil-test and field-history ingest / QC.</td>
+<td>Discuss Field Desk</td>
+</tr>
+<tr>
+<td><code>/products/field-review</code></td>
+<td>Zone-specific plan drafting / review.</td>
+<td>Discuss Field Review</td>
+</tr>
+<tr>
+<td><code>/products/field-proof</code></td>
+<td>Weather/timing exceptions.</td>
+<td>Discuss Field Proof</td>
+</tr>
+<tr>
+<td><code>/products/field-signal</code></td>
+<td>Approval-gated prescription-map preview/export direction.</td>
+<td>Discuss Field Signal</td>
+</tr>
+<tr>
+<td><code>/products/field-report</code></td>
+<td>Application/outcome/economic retrospective.</td>
+<td>Discuss Field Report</td>
+</tr>
+<tr>
+<td><code>/platform</code></td>
+<td>Proposed shared evidence model, annotations, review states, ownership and packet.</td>
+<td>View the simulated workbench</td>
+</tr>
+<tr>
+<td><code>/features</code></td>
+<td>Capability index linking to product sections; missingness, source lineage, reviewer veto, packet versioning.</td>
+<td>Find the relevant module</td>
+</tr>
+<tr>
+<td><code>/integrations</code></td>
+<td>Data and permissions: potential file formats, machinery permission boundary, no live connectors.</td>
+<td>Discuss data feasibility</td>
+</tr>
+<tr>
+<td><code>/evaluation</code></td>
+<td>Blinded retrospective → permissioned season pilot → go/no-go; scorecard and failure conditions.</td>
+<td>Request a paid evaluation</td>
+</tr>
+<tr>
+<td><code>/results</code></td>
+<td>Evaluation measures and example scorecard; no measured results yet.</td>
+<td>Read the evaluation method</td>
+</tr>
+<tr>
+<td><code>/pricing</code></td>
+<td>All five hypotheses, units, scope exclusions, one-module pilot, conditional SOW.</td>
+<td>Request a scoped proposal</td>
+</tr>
+<tr>
+<td><code>/request-demo</code></td>
+<td>Guided conversation request; product selection and prospect context.</td>
+<td>Send a guided-demo request, once connected</td>
+</tr>
+<tr>
+<td><code>/pilot</code></td>
+<td>Qualified paid-evaluation intake and next steps; no records uploaded.</td>
+<td>Submit an evaluation request, once connected</td>
+</tr>
+<tr>
+<td><code>/demo</code></td>
+<td>Synthetic queue and disclosure; free exploration with no sign-in.</td>
+<td>Open a simulated case</td>
+</tr>
+<tr>
+<td><code>/demo/cases/DEMO-CE-001</code></td>
+<td>Map, exceptions, source pane, proposed rate table and local reviewer action.</td>
+<td>Record a simulated review</td>
+</tr>
+<tr>
+<td><code>/demo/cases/DEMO-CE-001/report</code></td>
+<td>Watermarked packet / summary; machine export stays locked.</td>
+<td>Download a synthetic reviewer packet</td>
+</tr>
+<tr>
+<td><code>/demo/pilot</code></td>
+<td>Fictional buyer/operator/data owner, consent statuses, season protocol, proposed quote and task.</td>
+<td>Inspect the simulated pilot checklist</td>
+</tr>
+<tr>
+<td><code>/resources</code></td>
+<td>Practical method and evidence resources; no invented publication history.</td>
+<td>Read a guide</td>
+</tr>
+<tr>
+<td><code>/resources/evidence-packet</code></td>
+<td>Complete synthetic packet with limitations and reversible export instructions.</td>
+<td>View the sample packet</td>
+</tr>
+<tr>
+<td><code>/resources/pilot-protocol</code></td>
+<td>Comparator, metrics, thresholds, observation window and decision method.</td>
+<td>Prepare a discovery conversation</td>
+</tr>
+<tr>
+<td><code>/resources/sources</code></td>
+<td>Attributed factual research, dates and distinction from product claims.</td>
+<td>Read primary sources</td>
+</tr>
+<tr>
+<td><code>/company</code></td>
+<td>Mission, vision, stage, scope and evidence principles; no invented founders.</td>
+<td>Contact the team</td>
+</tr>
+<tr>
+<td><code>/contact</code></td>
+<td>General enquiry and routing; verified contact details added later.</td>
+<td>Submit an enquiry, once connected</td>
+</tr>
+<tr>
+<td><code>/trust</code></td>
+<td>Separate data access, human control, commercial/evidence limits; planned controls labeled.</td>
+<td>Review responsibilities</td>
+</tr>
+<tr>
+<td><code>/sign-in</code></td>
+<td>Polished concept access screen and access-help path; authentication unconnected.</td>
+<td>Enter the synthetic demo</td>
+</tr>
+<tr>
+<td><code>/access-help</code></td>
+<td>Explain controlled future access; no fake recovery email.</td>
+<td>Request access information</td>
+</tr>
+<tr>
+<td><code>/legal/privacy</code></td>
+<td>Draft notice: collection, purposes, consent, retention/deletion and contact owner to finalize.</td>
+<td>Contact privacy owner when established</td>
+</tr>
+<tr>
+<td><code>/legal/terms</code></td>
+<td>Draft concept-preview terms; no agronomic or equipment authority.</td>
+<td>Return to the demo</td>
+</tr>
+<tr>
+<td><code>/accessibility</code></td>
+<td>Motion controls, navigation help and contact path; no untested conformance claim.</td>
+<td>Change motion preference</td>
+</tr>
+<tr>
+<td><code>404</code></td>
+<td>Original field-line visual, useful recovery paths.</td>
+<td>Home / Products / Contact</td>
+</tr>
+</tbody></table></div>
+<p><strong>Footer:</strong> all products; Platform/Features/Data permissions; Solutions; Evaluation/Results/Pricing; Resources; Company/Contact; Trust/Privacy/Terms/Accessibility; sign-in; motion toggle. LinkedIn and Crunchbase icons only use verified CropEvidence profile URLs. Until supplied, show an accessible “Profile not yet available” inactive state, with no meaningless <code>#</code> links. No invented address, phone, registration number or copyright ownership assertion beyond the selected brand&#39;s proposed footer copy.</p>
+<h3 id="buyer-journeys">Buyer journeys</h3><ol>
+<li><strong>Qualified advisor:</strong> role-specific ad or homepage → offer page → synthetic artifact → <code>/pilot</code> → manually reviewed discovery → permitted blinded retrospective → paid pilot SOW → season review → go/no-go.</li>
+<li><strong>Operator:</strong> product page → <code>/demo</code> → conflict record → evidence pane → simulated reviewer disposition → packet → invite lead to guided conversation.</li>
+<li><strong>Data owner:</strong> <code>/integrations</code> → <code>/trust</code> → permission checklist → discovery. No real field files in a public intake.</li>
+<li><strong>Exploring visitor:</strong> resources → methodology → optional consented waitlist. This is weak interest, not validation.</li>
+</ol>
+<h2 id="07-homepage-copy-and-section-by-section-storyboard">07. Homepage: copy and section-by-section storyboard</h2><h3 id="copy-ready-hero">Copy-ready hero</h3><p>Eyebrow: <strong>CROPEVIDENCE / AGRONOMY DECISION SUPPORT CONCEPT</strong></p>
+<p>Headline: <strong>Draft zone-level input plans for an agronomist to approve—not a sprayer to execute.</strong></p>
+<p>Body: <strong>For independent agronomy service leads serving growers in one crop and region. Bring soil tests, field history and timing evidence into a source-linked review, with conflicts visible and the agronomist accountable for the decision.</strong></p>
+<p>Primary CTA: <strong>Request a paid evaluation</strong> → <code>/pilot</code>.</p>
+<p>Secondary CTA: <strong>Explore the simulated demo</strong> → <code>/demo</code>.</p>
+<p>Visible adjacent label: <strong>DEMO · SIMULATED DATA · Research-stage concept. No equipment control.</strong></p>
+<p>Support line: <strong>Start with a blinded retrospective comparison. Discuss a paid season pilot only after scope, permissions and review responsibilities are agreed.</strong></p>
+<h3 id="scroll-chapters">Scroll chapters</h3><p>All motion below is proposed. Hero and essential text are present immediately; motion enhances artwork. Each chapter retains complete static content. Product names and links appear before the horizontal passage so the full suite never depends on scrolling through five scenes.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Chapter / copy</th>
+<th>Composition and background</th>
+<th>Scroll / appearance behavior</th>
+<th>Exit and small-screen treatment</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>H1 · Hero, above</td>
+<td>Ivory editorial title left; large original field polygon right; labels float on solid paper plaques. Three soil zones and one clay conflict point.</td>
+<td>No intro gate. Over first 0–70% of hero traversal, boundary strokes resolve, source pins appear, conflict annotation opens. Headline never waits for animation.</td>
+<td>Up-scroll reverses artwork only. Mobile uses heading → CTAs → static map with persistent disclosure.</td>
+</tr>
+<tr>
+<td>H2 · “One field. Several versions of the truth.”</td>
+<td>Porcelain evidence table; three offset document sheets: soil test, history, weather. Thin clay annotation lines connect incompatible dates/methods.</td>
+<td>Enter at top 80% viewport: sheets align by 12px, source timestamps remain fixed; mismatch rule draws. 500ms once.</td>
+<td>Copy remains visible on return. Mobile stacks three sheets and warning.</td>
+</tr>
+<tr>
+<td>H3 · “Five proposed offers. Five distinct decisions.”</td>
+<td>Sage title band containing all five names/links, followed by a wide horizontal atlas of five unique artifacts.</td>
+<td>Desktop vertical scroll translates the atlas through O1–O5. Show section numbers and direct controls. Each panel reveals its output, boundary and hypothesis price.</td>
+<td>Natural exit after finite track; Skip product story links below. Mobile/reduced motion show five complete stacked panels.</td>
+</tr>
+<tr>
+<td>H4 · “Follow the evidence before the recommendation.”</td>
+<td>Dark-soil stage. Light workbench stays in view; narrative rail tracks source → conflict → draft → review.</td>
+<td>One pinned vertical sequence; map remains stable while the source drawer, conflict and reviewer requirement are progressively emphasized. Scroll never performs approval.</td>
+<td>Up-scroll restores visual steps, not local demo decisions. Mobile uses four screenshots/diagrams with captions.</td>
+</tr>
+<tr>
+<td>H5 · “Every proposal needs an owner.”</td>
+<td>Paper responsibility swimlane: advisor lead / operator / data owner / grower.</td>
+<td>Lines connect roles to artifacts as the section enters; no animated avatars or invented endorsements.</td>
+<td>Entire diagram visible in still mode; mobile role rows preserve order.</td>
+</tr>
+<tr>
+<td>H6 · “A source-linked record across the proposed suite.”</td>
+<td>White architectural spread; five small module outputs feed a common case envelope and packet.</td>
+<td>Draw only relevant connectors once; clicking a module highlights its artifact and links to its page.</td>
+<td>Links and labels usable without animation; compact vertical architecture on mobile.</td>
+</tr>
+<tr>
+<td>H7 · “Three jobs to evaluate first.”</td>
+<td>Three editorial rows with different visuals: pre-season QC sheet, zone review overlay, end-season evidence ledger.</td>
+<td>Subtle viewport reveal, 16px maximum; hover highlights the referenced output, keyboard does the same.</td>
+<td>No lateral carousel required; full content always available.</td>
+</tr>
+<tr>
+<td>H8 · “Test the work before expanding the promise.”</td>
+<td>Straw-toned protocol spread: blinded comparison, permissioned season, decision review.</td>
+<td>A vertical timeline fills as chapters enter; scorecard fields appear as “Not evaluated,” never counting up fake results.</td>
+<td>Reduced motion shows complete timeline. Links to Evaluation and Results.</td>
+</tr>
+<tr>
+<td>H9 · “Permissions and judgment are part of the workflow.”</td>
+<td>Dark section with two distinct columns: data access versus physical/control. A clear machine-control boundary across the bottom.</td>
+<td>Boundary line draws once; no lock turning green, no badge implying certification.</td>
+<td>Mobile places data and control requirements one after another.</td>
+</tr>
+<tr>
+<td>H10 · “Scope one offer for one season.”</td>
+<td>Quiet ivory quotation sheet, all five hypothesis prices listed with exact units.</td>
+<td>No pinned motion. A user-selected module highlights its line; default remains neutral.</td>
+<td>Price qualifier stays beside numbers at every size. CTA preselects offer in pilot intake.</td>
+</tr>
+<tr>
+<td>H11 · “Questions worth settling early.”</td>
+<td>Porcelain accordion with fine separators; useful buying questions.</td>
+<td>User-controlled open/close, about 180ms; content never auto-rotates.</td>
+<td>Keyboard and touch equivalent; links to deeper pages.</td>
+</tr>
+<tr>
+<td>H12 · “Bring one crop, one region and one decision to test.”</td>
+<td>Licensed field-edge photograph in restrained crop, solid ivory CTA panel over it; no text directly over busy crops.</td>
+<td>Image reveal on entry, no mandatory parallax. Primary paid-evaluation CTA, secondary guided-demo link, optional waitlist.</td>
+<td>Static crop on mobile; consent/privacy summary visible.</td>
+</tr>
+<tr>
+<td>H13 · Footer</td>
+<td>Soil background, reverse logo, complete link map and source/limitations links.</td>
+<td>No decorative animation. Motion preference control persists locally.</td>
+<td>Accessible accordions only if needed; all links in document order.</td>
+</tr>
+</tbody></table></div>
+<h3 id="copy-ready-supporting-sections">Copy-ready supporting sections</h3><p><strong>Problem:</strong> “A recent result is not always a comparable result. Review sampling dates, methods, zones and previous applications before a draft becomes a decision.”</p>
+<p><strong>Mechanism:</strong> “Inspect the source. Resolve the conflict. Review the draft. Keep the decision attached.”</p>
+<p><strong>Accountability:</strong> “The agronomy lead owns the evaluation. A named operator handles the case. The data owner confirms permitted access. The agronomist and grower retain the relevant approval rights.”</p>
+<p><strong>Limitations:</strong> “This preview uses invented records. It does not connect to machinery, assess a real field or establish a safe application window. Local agronomic and legal review remains necessary.”</p>
+<p><strong>Pilot ask:</strong> “Start with a blinded review of historical recommendations. If the evaluation supports proceeding, agree a paid season pilot with permitted records, a prespecified measurement protocol and an agronomist veto.”</p>
+<p><strong>FAQ answers:</strong> Is it live? Research-stage concept only. Who decides? The accountable agronomist, with required grower and other approvals. Does it control equipment? No. Are these prices established? No, they are test hypotheses. Can we upload field records? Not through the public demo. Does it promise yield or savings? No. Are CropX/Deere connected? No integration is established. Why one crop and region? Local validation and permission constraints must be tested before expansion.</p>
+<h2 id="08-dedicated-page-structures-and-unique-heroes">08. Dedicated page structures and unique heroes</h2><p>Every product page includes: badge/status → responsibility → buyer problem → inputs → workflow → detailed artifact → outputs → source/control requirements → evaluation measure → proposed price → relationship to suite → FAQ → product-aware pilot CTA. No page is just a hero and the same repeated cards.</p>
+<h3 id="field-desk-products-field-desk">Field Desk — <code>/products/field-desk</code></h3><p>Hero: <strong>“Make the field record inspectable.”</strong> A tall evidence sheet on porcelain, with source tabs projecting from its edge. As the first section enters, mixed documents align into rows; a missing unit remains visibly unresolved. Sections: input inventory → format/method/date checks → conflicts and missingness → source register → scope and price → pilot. Distinct visual: a comparison lens linking two soil records to one zone. Outputs do not certify the source&#39;s accuracy. Evaluation: conflicts found, false flags and reviewer usefulness against a pre-agreed reference set. FAQ: accepted source formats are to be assessed, not claimed as implemented connectors. CTA: <strong>Discuss a Field Desk evaluation.</strong></p>
+<h3 id="field-review-products-field-review">Field Review — <code>/products/field-review</code></h3><p>Hero: <strong>“Keep the reasoning beside the zone.”</strong> Olive contour map with a cream rationale sheet, not a full-screen dashboard. Sections: field/zone context → source-linked options → conflicting evidence → agronomist decision → versioned packet → scope and price. One short sticky map accompanies three normal-flow evidence notes; each changes a highlight, never a real recommendation. Outputs are draft options with assumptions and alternative explanations. Measure blinded acceptance, revisions, rejection reasons and invalid recommendations. CTA: <strong>Evaluate a zone-plan draft.</strong></p>
+<h3 id="field-proof-products-field-proof">Field Proof — <code>/products/field-proof</code></h3><p>Hero: <strong>“Know which timing assumptions need another look.”</strong> Soft mineral/sage horizon with a dated weather-window strip and freshness marker. Sections: source issue time versus forecast window → example exception → stale-data state → assigned next action → limitations → monthly in-season hypothesis. Scrub a timeline cursor through synthetic events; no “safe to spray” green band. Source expiry introduces “Review required,” not automatic cancellation or dispatch. Evaluate exception relevance, stale-data detection and reviewer handling; do not claim a weather prediction service. CTA: <strong>Discuss timing-exception review.</strong></p>
+<h3 id="field-signal-products-field-signal">Field Signal — <code>/products/field-signal</code></h3><p>Hero: <strong>“Make approval visible before export.”</strong> Dark-soil approval corridor; light prescription sheet stops at a labeled gate. Sections: draft manifest → agronomist review → grower/permission/regulatory checks → illustrative format preview → machine export disabled → scope and price. Scrolling draws the route to the gate and stops. Only deliberate demo controls change local review state; even after simulated sign-off, machine export stays disabled. Future compatibility is unverified. CTA: <strong>Scope a reviewed-map evaluation.</strong></p>
+<h3 id="field-report-products-field-report">Field Report — <code>/products/field-report</code></h3><p>Hero: <strong>“Close the season without losing the evidence.”</strong> Ivory report spread with planned/recorded/unknown columns; no fabricated growth chart. Sections: protocol baseline → permitted application records → input/yield comparison → economic assumptions → missingness/weather confounding → evidence packet → price. Scroll assembles report leaves into a readable stack; charts use “Not observed” until real authorized observations exist. The public demo has no executed application records. Measurement concerns completeness and interpretation, not promised causal uplift. CTA: <strong>Plan a seasonal retrospective.</strong></p>
+<h3 id="supporting-page-composition-and-motion">Supporting-page composition and motion</h3><div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Page</th>
+<th>Hero and visual</th>
+<th>Section order</th>
+<th>Motion and CTA</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Why change</td>
+<td>“The gaps between records become review work.” Annotated document collage on off-white.</td>
+<td>Sources → time/method mismatch → consequence for review → alternatives → proposed method.</td>
+<td>Document alignment reveal; Inspect the conflict.</td>
+</tr>
+<tr>
+<td>Solutions overview</td>
+<td>“Start with the decision your advisor owns.” Three large numbered job rows.</td>
+<td>Primary buyer → pre-season QC → zone review → retrospective → participant roles.</td>
+<td>Connector highlights; Choose one workflow.</td>
+</tr>
+<tr>
+<td>Independent agronomists</td>
+<td>“One crop. One region. A review your team can own.” Advisor/operator/data-owner cards beside a field notebook.</td>
+<td>Scope → roles → workflow → data feasibility → pilot ask.</td>
+<td>Role-to-task lines; Request a paid evaluation.</td>
+</tr>
+<tr>
+<td>Products</td>
+<td>“Five proposed offers, separately scoped.” Oversized five-part atlas index.</td>
+<td>Product inventory → outputs → comparison → shared platform → prices → CTA.</td>
+<td>Native horizontal optional browsing plus complete vertical links; Select a module.</td>
+</tr>
+<tr>
+<td>Platform</td>
+<td>“One case, from source to reviewer packet.” Architectural cutaway of evidence envelope.</td>
+<td>Inputs → source model → annotations → review states → packet → future connectors/boundaries.</td>
+<td>One finite vertical layer build; Open simulated workbench.</td>
+</tr>
+<tr>
+<td>Features</td>
+<td>“The details that make a case reviewable.” Annotated index.</td>
+<td>Intake → provenance → missingness → exceptions → review → packet; link each to its owner module.</td>
+<td>Light enter reveals, searchable/filterable only if useful; Find module.</td>
+</tr>
+<tr>
+<td>Integrations</td>
+<td>“Establish permission before connection.” Source-format matrix on drafting grid.</td>
+<td>Soil formats → private maps → weather → machinery permission → future connector assessment.</td>
+<td>Permission lanes highlight on selection; Discuss feasibility. No vendor logo wall.</td>
+</tr>
+<tr>
+<td>Evaluation</td>
+<td>“Agree what evidence would change the decision.” Large protocol timeline.</td>
+<td>Qualification → blinded comparator → signed SOW → season measurement → failure thresholds → go/no-go.</td>
+<td>Milestone progression, no fake completed steps; Request a paid evaluation.</td>
+</tr>
+<tr>
+<td>Results</td>
+<td>“How the concept will be evaluated.” Blank scorecard with denominators and units.</td>
+<td>No results yet → proposed measures → illustrative packet → confounders → publication criteria.</td>
+<td>Static charts/empty states; Read the protocol. No fabricated testimonial strip.</td>
+</tr>
+<tr>
+<td>Pricing</td>
+<td>“Begin with a scoped, paid test.” Editorial quotation sheet.</td>
+<td>Five hypotheses → included/excluded work → services/permissions → SOW process → FAQ.</td>
+<td>User selection only; Request a scoped proposal.</td>
+</tr>
+<tr>
+<td>Guided demo request</td>
+<td>“Walk through the evidence with us.” Small annotated specimen beside form.</td>
+<td>What is shown → offer choice → minimal context → consent → next steps.</td>
+<td>No pinning; factual delivery states.</td>
+</tr>
+<tr>
+<td>Pilot</td>
+<td>“Propose one evaluation.” Protocol checklist beside form.</td>
+<td>Buyer → module/crop/region → operator/data owner → readiness → consent → manual review.</td>
+<td>Form step transitions only, no fake urgency.</td>
+</tr>
+<tr>
+<td>Demo queue/case/report/pilot</td>
+<td>Functional workbench; visible synthetic header on all routes.</td>
+<td>Queue → selected case/source pane → local decision → packet; separate pilot checklist.</td>
+<td>Direct UI actions; no scroll-led hiding of evidence.</td>
+</tr>
+<tr>
+<td>Resources / source pages</td>
+<td>“Methods before claims.” Folio index with sample document cover.</td>
+<td>Guides → packet → protocol → sources → related offers.</td>
+<td>Reading-friendly anchor navigation; no pinning.</td>
+</tr>
+<tr>
+<td>Company</td>
+<td>“Evidence before expansion.” Licensed field-detail image and editorial principles.</td>
+<td>Mission → vision → research stage → first buyer → principles → contact.</td>
+<td>One quiet image reveal; Contact. No invented team portraits.</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td>“Start with the question.” Calm paper split layout.</td>
+<td>Enquiry type → form → privacy → response process, without an invented SLA.</td>
+<td>Simple form states.</td>
+</tr>
+<tr>
+<td>Trust</td>
+<td>“Access, judgment and control are separate responsibilities.” Two-column responsibility diagram.</td>
+<td>Data access → physical/control → commercial liability → evidence limits → current/proposed controls.</td>
+<td>Connectors enter once; Read responsibilities.</td>
+</tr>
+<tr>
+<td>Sign-in / access-help</td>
+<td>“Your evidence workspace.” Cropped static synthetic record with clear concept badge.</td>
+<td>Auth unconnected notice → demo access → guided access help → privacy.</td>
+<td>No scroll effect; do not collect actual passwords or pretend to send recovery emails.</td>
+</tr>
+<tr>
+<td>Privacy / Terms / Accessibility</td>
+<td>Editorial title and side contents; no decorative hero.</td>
+<td>Draft status → actual intended behavior → responsibilities → outstanding publication details → contact path.</td>
+<td>Normal anchor navigation; reduced-motion control on Accessibility.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>“This record isn&#39;t here.” Broken field contour without an error animation loop.</td>
+<td>Explanation → Home / Products / Contact.</td>
+<td>Static accessible recovery.</td>
+</tr>
+</tbody></table></div>
+<h2 id="09-motion-choreography-and-interaction-specifications">09. Motion choreography and interaction specifications</h2><h3 id="m1-horizontal-product-atlas">M1: Horizontal product atlas</h3><p>Enable only at viewport width ≥1200px, height ≥800px and no reduced-motion preference. At other sizes use stacked panels. Before entry, show all five product names and direct page links in ordinary flow.</p>
+<p>The parent pins below the 72px header. Five panels each about 70–76vw wide share a horizontal track. Travel equals the actual track width minus viewport width; scroll distance equals that travel, recalculated after fonts/images load. Progress 0–20% O1; 20–40% O2; 40–60% O3; 60–80% O4; 80–100% O5. Allow pauses to read at any point, do not force snapping. A direct numbered control moves to the corresponding document scroll position; keyboard focus to a panel first exposes it. Provide “View products as a list” and “Skip product story.” The final panel releases into H4 with no blank spacer.</p>
+<p>Use the parent for pinning and linear translation; child <code>containerAnimation</code> triggers may reveal artwork but must not be separately pinned/snapped. <code>horizontal: true</code> is for native horizontal scrolling and is not the switch for this effect. Source: <a href="https://gsap.com/docs/v3/Plugins/ScrollTrigger/">GSAP ScrollTrigger</a>.</p>
+<h3 id="m2-vertical-evidence-review">M2: Vertical evidence review</h3><p>Maximum 220vh additional scroll travel on eligible desktop screens. Pin a stable outer workbench; animate children. Four steps: 0–25% source timestamps; 25–50% incompatible tests; 50–75% draft/withheld rate; 75–100% assigned reviewer and locked export. The disclosure, case ID, warning and no-control boundary never move offscreen. Text steps remain normal-flow semantic content. Up-scroll reverses visual emphasis only. A user review decision is never made or undone by a scroll timeline.</p>
+<h3 id="m3-typography-background-and-image-motion">M3: Typography, background and image motion</h3><p>Headings may use a 400–550ms line reveal after entering the lower 80% of the viewport, with 40–60ms line stagger and at most 16px travel. Keep an accessible heading intact; decorative split spans are hidden from assistive technology. Never animate every word of a paragraph. Background color transitions occur across a 15–20vh overlap between major chapters, with type contrast stable throughout. Hero imagery may shift at most 24px; no parallax on touch/reduced-motion. Atmospheric video, if later commissioned, needs a poster, pause and skip and must not block content.</p>
+<h3 id="micro-interactions">Micro-interactions</h3><div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Default → interaction</th>
+<th>Accessibility / state</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Primary button</td>
+<td>Olive fill; hover moves arrow 4px within a slot and slightly deepens fill, 160ms.</td>
+<td>Text stable; focus ring; pressed 1px; loading reserved for real work.</td>
+</tr>
+<tr>
+<td>Product link/card</td>
+<td>Thin edge rail thickens; linked artifact highlights its output, 180ms.</td>
+<td>Same effect on focus; essential copy never hidden; no tilt.</td>
+</tr>
+<tr>
+<td>Source row</td>
+<td>Hover/focus emphasizes matching point and source ID.</td>
+<td>Click/Enter opens pane, Escape closes, focus returns.</td>
+</tr>
+<tr>
+<td>Map zone</td>
+<td>Outline thickens; hatch and text label identify selection.</td>
+<td>Parallel zone list and semantic table; pointer not required.</td>
+</tr>
+<tr>
+<td>Review decision</td>
+<td>Explicit button opens rationale/reviewer form.</td>
+<td>Missing reason shows inline error; changes local synthetic state only.</td>
+</tr>
+<tr>
+<td>Machine export</td>
+<td>Disabled with persistent explanation beside it.</td>
+<td>No hover-only tooltip. Cannot activate via keyboard, code path or URL.</td>
+</tr>
+<tr>
+<td>Accordions/tabs</td>
+<td>Small height/opacity transition; no auto-rotation.</td>
+<td>Correct expanded/selected state, focus order and arrow navigation where appropriate.</td>
+</tr>
+<tr>
+<td>Form submit</td>
+<td>Pending state only after connected request; preserve inputs on error.</td>
+<td>Error summary and field links; success only after server acknowledgment. Demo form says nothing sent.</td>
+</tr>
+</tbody></table></div>
+<h3 id="implementation-constraints-for-the-future-build">Implementation constraints for the future build</h3><p>React/TypeScript with a suitable multi-page framework; original CSS/token system; GSAP ScrollTrigger for coordinated sequences. Native scrolling by default. Lenis is optional only if it preserves input, anchors, focus and reduced motion; it is not a prerequisite for premium quality. Destroy animations/listeners on route changes, refresh after layout settles, avoid duplicating pin spacers. <a href="https://gsap.com/docs/v3/GSAP/gsap.matchMedia()/">GSAP responsive setup</a></p>
+<p>Respect OS reduced motion and a persistent in-site toggle: remove pinning, parallax, transforms and animated background changes; display all steps in final readable states. Explicitly support nonessential interaction-motion disablement and pause/stop/hide where applicable. <a href="https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html">W3C animation from interactions</a> · <a href="https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html">W3C pause, stop, hide</a></p>
+<p>Proposed engineering targets, not measured results: LCP ≤2.5s, INP ≤200ms, CLS ≤0.1 at the 75th percentile when sufficient field data exist. Until then, use lab checks on representative mobile hardware/network and label them as lab checks. Budget initial critical assets near 1MB compressed, lazy-load demo/media, serve appropriately sized images and subset fonts. Avoid WebGL dependency for understanding the offering.</p>
+<h2 id="10-simulated-workflow-and-state-model">10. Simulated workflow and state model</h2><p><strong>Illustrative scope assumption:</strong> maize in Iowa, United States, one synthetic 2026 season. This makes the storyboard concrete and is not an approved target market or locally validated agronomic model. A real pilot must select and validate its own crop, region and agronomic/legal reviewers. No pesticide products, label determinations or machine-executable prescriptions are specified.</p>
+<p><strong>Fictional account:</strong> DEMO Alder Field Advisory. Buyer/accountability owner: DEMO Mira Hale, independent agronomy service lead. Operator: DEMO Owen Reed. Data/integration owner: DEMO Leah Finch. Agronomist reviewer: DEMO Mira Hale. Grower representative: DEMO Rowan Vale. Every name, organization, ID, date and event in the demo is invented.</p>
+<p><strong>Main case:</strong> DEMO-CE-001, Field DEMO-F01, 30 illustrative hectares, zones Z1 12ha / Z2 10ha / Z3 8ha. Geometry uses local non-geographic coordinates, with no actual parcel or location exposed. Area values are fictional attributes, not measured from the drawing.</p>
+<p><strong>Core event:</strong> two source tests associated with Z2 disagree and lack sufficient matching method/depth context. The system must not average them into a confident rate. An inherited draft option is withheld, the uncertainty note is visible, and the agronomist can reject it or request clarification. A simulated human disposition creates a new local review event and packet version. It does not make machine export operational.</p>
+<p><strong>Sequence:</strong> source artifact → timestamp/method exception → linked evidence comparison → proposed next action → assigned reviewer → recorded local disposition → synthetic reviewer packet. Separate the reviewer-packet download from a machinery prescription export.</p>
+<p><strong>Case states:</strong> pending intake; blocked; in review; review complete; rejected. “Review complete” means only that a synthetic review step is complete. It never means a field application occurred.</p>
+<p><strong>Export state:</strong> machine export disabled in all demo states. A separate <code>review_packet_ready</code> flag can become true after a local simulated review. Packet is JSON/HTML/PDF direction only, visibly watermarked, versioned and deletable/resettable; no georeferenced machine command or operational prescription file.</p>
+<h3 id="ten-queue-records">Ten queue records</h3><p>All dates UTC. Frozen demo clock: 20 April 2026, 15:00 UTC. Relative ages must be calculated from this clock, never the visitor&#39;s current date. All rows visibly carry DEMO / SIMULATED. Default queue totals: 3 pending, 3 blocked, 2 review complete, 2 rejected; total 10. These are fixture counts, not traction metrics.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Field / zone</th>
+<th>Offer</th>
+<th>Created → last event</th>
+<th>State / next action</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DEMO-CE-001</td>
+<td>F01 / Z2</td>
+<td>O2</td>
+<td>Apr 18 09:00 → Apr 20 14:00</td>
+<td>Blocked: methods conflict; request matched test context Apr 21 10:00.</td>
+<td>Mira</td>
+</tr>
+<tr>
+<td>DEMO-CE-002</td>
+<td>F02 / all</td>
+<td>O1</td>
+<td>Apr 17 09:00 → Apr 20 11:00</td>
+<td>Pending: map legacy units; next review Apr 21 11:00.</td>
+<td>Owen</td>
+</tr>
+<tr>
+<td>DEMO-CE-003</td>
+<td>F03 / all</td>
+<td>O3</td>
+<td>Apr 18 10:00 → Apr 20 12:00</td>
+<td>Pending: acknowledge synthetic weather exception Apr 21 09:00.</td>
+<td>Mira</td>
+</tr>
+<tr>
+<td>DEMO-CE-004</td>
+<td>F04 / all</td>
+<td>O4</td>
+<td>Apr 18 11:00 → Apr 20 12:30</td>
+<td>Blocked: permission not established; request scope Apr 21 13:00.</td>
+<td>Leah</td>
+</tr>
+<tr>
+<td>DEMO-CE-005</td>
+<td>F05 / all</td>
+<td>O1</td>
+<td>Apr 16 08:00 → Apr 19 16:00</td>
+<td>Review complete: QC inventory documented; packet ready.</td>
+<td>Owen</td>
+</tr>
+<tr>
+<td>DEMO-CE-006</td>
+<td>F06 / Z1</td>
+<td>O2</td>
+<td>Apr 16 10:00 → Apr 19 17:00</td>
+<td>Rejected: unsupported carry-over draft; reopen only with new evidence.</td>
+<td>Mira</td>
+</tr>
+<tr>
+<td>DEMO-CE-007</td>
+<td>F07 / all</td>
+<td>O5</td>
+<td>Apr 17 12:00 → Apr 20 10:00</td>
+<td>Blocked: private yield-map permission unknown; no outcome computed.</td>
+<td>Leah</td>
+</tr>
+<tr>
+<td>DEMO-CE-008</td>
+<td>F08 / all</td>
+<td>O3</td>
+<td>Apr 17 13:00 → Apr 19 15:00</td>
+<td>Review complete: stale-source exception acknowledged; no application decision.</td>
+<td>Mira</td>
+</tr>
+<tr>
+<td>DEMO-CE-009</td>
+<td>F09 / all</td>
+<td>O4</td>
+<td>Apr 18 08:00 → Apr 20 13:00</td>
+<td>Pending: reviewer-packet checklist; machine export disabled.</td>
+<td>Owen</td>
+</tr>
+<tr>
+<td>DEMO-CE-010</td>
+<td>F10 / Z3</td>
+<td>O2</td>
+<td>Apr 16 09:00 → Apr 20 09:00</td>
+<td>Rejected: sample depth missing; candidate withdrawn.</td>
+<td>Mira</td>
+</tr>
+</tbody></table></div>
+<h3 id="main-case-chronology-and-evidence">Main-case chronology and evidence</h3><div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Event / source</th>
+<th>Synthetic timestamp</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SRC-S01 soil result A</td>
+<td>Sample Apr 12 08:00; issued Apr 14 10:00; ingested Apr 18 09:00</td>
+<td>Z2 illustrative phosphorus index 18 mg/kg; method context incomplete.</td>
+</tr>
+<tr>
+<td>SRC-S02 soil result B</td>
+<td>Sample Apr 13 08:00; issued Apr 15 10:00; ingested Apr 18 09:05</td>
+<td>Z2 illustrative phosphorus index 31 mg/kg; method/depth alignment unverified. Not directly comparable.</td>
+</tr>
+<tr>
+<td>SRC-H01 field history</td>
+<td>Record date Oct 15 2025; ingested Apr 18 09:10</td>
+<td>Source placeholder describing prior applications; no executed application rows in public demo.</td>
+</tr>
+<tr>
+<td>SRC-Z01 zone sketch</td>
+<td>Created Apr 17 16:00; ingested Apr 18 09:15</td>
+<td>Original schematic boundary/zone file; no real location.</td>
+</tr>
+<tr>
+<td>SRC-W01 weather window</td>
+<td>Issued Apr 18 06:00; valid through Apr 19 18:00</td>
+<td>Stale at frozen demo clock; not a safe operating window.</td>
+</tr>
+<tr>
+<td>EX-001 conflict</td>
+<td>Apr 18 09:20</td>
+<td>Two test methods/depths cannot be aligned; draft blocked.</td>
+</tr>
+<tr>
+<td>RV-001 operator note</td>
+<td>Apr 19 10:00</td>
+<td>Owen requests reviewer assessment; candidate rate hidden.</td>
+</tr>
+<tr>
+<td>RV-002 reviewer task</td>
+<td>Apr 20 14:00</td>
+<td>Mira assigned; next action Apr 21 10:00; label/local checks still required.</td>
+</tr>
+</tbody></table></div>
+<p><strong>Proposed rate table:</strong> Z1 displays <strong>90 kg N/ha — fictional UI fixture, unvalidated draft, not approved</strong>; Z2 displays <strong>Withheld — conflicting tests</strong>; Z3 displays <strong>Withheld — missing sampling depth</strong>. The Z1 number is an invented design value, not calculated from the soil samples or proposed for a real field. Columns include candidate amount, unit, basis, uncertainty and reviewer. Z2/Z3 amounts are <code>null</code>, never zero. Keep the fictional-data label beside the table; no numeric draft can be machine-exported. Local agronomy review is required before using any real-field rates in a later permissioned evaluation.</p>
+<p><strong>Alternate approved-preview storyboard:</strong> DEMO-CE-009 can demonstrate the requested operator-reviewed prescription presentation. Deliberate controls let the operator mark fixture checks “Simulated only”; an explicitly assigned agronomist must then enter a rationale and choose “Simulate approval of this preview.” The UI records the operator, agronomist, time and version, with “SIMULATED APPROVAL — NOT VALID FOR APPLICATION” directly beside the prescription. Unknown checks block that action; an operator alone cannot bypass the agronomist. Machine export remains disabled even after this local state change. The default queue remains pending until the visitor takes the action; counts then recompute from local state and reset restores the original ten-record fixture.</p>
+<h3 id="simulated-pilot-record">Simulated pilot record</h3><p>DEMO-PILOT-001; stage “Evaluation proposed”; offer O1; buyer Mira; operator Owen; data owner Leah; grower consent “Not established — synthetic record”; equipment export permission “Not established”; season protocol “Draft”; proposed seasonal quote 12 fictional fields × $25 = $300, <strong>hypothesis, not sent or accepted</strong>; paid SOW “Not signed”; next task “Review permissions and comparator,” Apr 21 10:00 UTC. This planning-only record does not alter the ten-case queue totals and establishes no pipeline or revenue.</p>
+<h2 id="11-data-dictionary">11. Data dictionary</h2><p>All demo entities require <code>is_synthetic=true</code> and visible synthetic labels. No public upload endpoint, real credentials, production writeback or external integration. The schema is a future implementation contract, not a deployed database.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Entity / field</th>
+<th>Type / example</th>
+<th>Validation or meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>account.id / display_name</td>
+<td>String / DEMO-ACCOUNT-001</td>
+<td>Synthetic prefix; fictional organization.</td>
+</tr>
+<tr>
+<td>account.buyer_segment</td>
+<td>Enum / independent_advisor</td>
+<td>Do not merge co-op/grower segments.</td>
+</tr>
+<tr>
+<td>account.buyer_id / operator_id / data_owner_id</td>
+<td>Role references</td>
+<td>Each role explicitly assigned; may be separate people.</td>
+</tr>
+<tr>
+<td>case.id / offer_id</td>
+<td>String / DEMO-CE-001 / O2</td>
+<td>One separately scoped offer per case.</td>
+</tr>
+<tr>
+<td>case.field_id / zone_ids</td>
+<td>References</td>
+<td>Existing field and zones only.</td>
+</tr>
+<tr>
+<td>case.status</td>
+<td>Enum</td>
+<td>Pending, blocked, in_review, review_complete, rejected.</td>
+</tr>
+<tr>
+<td>case.created_at / updated_at</td>
+<td>ISO 8601 UTC</td>
+<td>Updated time not before creation.</td>
+</tr>
+<tr>
+<td>case.next_action / due_at</td>
+<td>String / timestamp</td>
+<td>Named owner and explicit date; null when appropriately closed.</td>
+</tr>
+<tr>
+<td>case.crop / region / season</td>
+<td>Strings / maize / Iowa / 2026</td>
+<td>Demo assumptions, not validation claims.</td>
+</tr>
+<tr>
+<td>field.geometry</td>
+<td>Local polygon array</td>
+<td>Non-georeferenced; no real parcel coordinates.</td>
+</tr>
+<tr>
+<td>field.area_ha / zone.area_ha</td>
+<td>Decimal</td>
+<td>Synthetic attributes; zone sum equals field total.</td>
+</tr>
+<tr>
+<td>source.id / document_ref</td>
+<td>String</td>
+<td>Source pane resolves fixture document; no broken links.</td>
+</tr>
+<tr>
+<td>source.kind</td>
+<td>Enum</td>
+<td>Soil, history, weather, zone, permission, protocol.</td>
+</tr>
+<tr>
+<td>source.sampled_at / issued_at / ingested_at</td>
+<td>Nullable timestamps</td>
+<td>Distinguish collection, publication and import.</td>
+</tr>
+<tr>
+<td>source.valid_from / valid_to</td>
+<td>Nullable timestamps</td>
+<td>Relevant for forecasts; not universal truth expiry.</td>
+</tr>
+<tr>
+<td>source.value / unit / analyte</td>
+<td>Decimal or null / mg/kg / P-index</td>
+<td>Fictional observations only; units never silently inferred.</td>
+</tr>
+<tr>
+<td>source.method / depth_cm</td>
+<td>Nullable metadata</td>
+<td>Missing values cause review, not imputed comparability.</td>
+</tr>
+<tr>
+<td>source.permission_status</td>
+<td>Enum</td>
+<td>Unknown, requested, permitted, denied; demo all labeled simulated.</td>
+</tr>
+<tr>
+<td>source.provenance_note / quality_flags</td>
+<td>Text / array</td>
+<td>Missingness, age, conflict, method mismatch.</td>
+</tr>
+<tr>
+<td>exception.id / source_ids / severity</td>
+<td>References / enum</td>
+<td>Severity rule documented; no certification.</td>
+</tr>
+<tr>
+<td>exception.reason / disposition</td>
+<td>Text / enum</td>
+<td>Human-readable cause and resolution/withhold/reject.</td>
+</tr>
+<tr>
+<td>plan.id / version / zone_id</td>
+<td>References / integer</td>
+<td>Immutable local snapshots; source IDs attached.</td>
+</tr>
+<tr>
+<td>plan.proposed_rate / rate_unit</td>
+<td>Nullable decimal / string</td>
+<td>Z1 fixture 90 kg N/ha is invented and unvalidated; withheld is null, never zero. No executable export.</td>
+</tr>
+<tr>
+<td>plan.rationale / alternatives / uncertainty</td>
+<td>Text</td>
+<td>Explain why draft exists, why it may fail, missing evidence.</td>
+</tr>
+<tr>
+<td>review.id / reviewer_id / reviewed_at</td>
+<td>References / timestamp</td>
+<td>Deliberate local action; no implicit scroll approval.</td>
+</tr>
+<tr>
+<td>review.decision / reason</td>
+<td>Enum / required text</td>
+<td>Request info, reject, acknowledge review, simulated preview approval; no real authority.</td>
+</tr>
+<tr>
+<td>review.label_check / local_review / grower_approval</td>
+<td>Status fields</td>
+<td>Required/unknown/simulated only; actual permissions not inferred.</td>
+</tr>
+<tr>
+<td>export.machine_enabled</td>
+<td>Boolean / false</td>
+<td>Invariant false in demo regardless of review.</td>
+</tr>
+<tr>
+<td>packet.id / version / source_ids</td>
+<td>References</td>
+<td>Exported reviewer artifact retains all synthetic labels.</td>
+</tr>
+<tr>
+<td>packet.created_at / demo_clock / limitations</td>
+<td>Timestamp / text</td>
+<td>Stable chronology and no-control boundary.</td>
+</tr>
+<tr>
+<td>outcome.application_records</td>
+<td>Empty list</td>
+<td>No executed applications in demo.</td>
+</tr>
+<tr>
+<td>outcome.input_rate / yield / cost</td>
+<td>Nullable measures</td>
+<td>No data → not observed; never sample uplift.</td>
+</tr>
+<tr>
+<td>pilot.offer / price / unit / currency</td>
+<td>O1 / 25 / field-season / USD</td>
+<td>Hypothesis flag required.</td>
+</tr>
+<tr>
+<td>pilot.field_count / quote_total</td>
+<td>12 / 300</td>
+<td>Illustrative arithmetic, not queue count or accepted revenue.</td>
+</tr>
+<tr>
+<td>pilot.consent / comparator / protocol / sow</td>
+<td>Status fields</td>
+<td>Readiness dimensions tracked separately.</td>
+</tr>
+<tr>
+<td>lead.followup_consent / marketing_consent</td>
+<td>Separate booleans</td>
+<td>No prechecked marketing; real lead data restricted to permitted future handler.</td>
+</tr>
+</tbody></table></div>
+<h2 id="12-sample-evidence-packet">12. Sample evidence packet</h2><p><strong>DEMO · SIMULATED DATA · CONCEPT PREVIEW</strong></p>
+<p>Packet DEMO-PKT-001 v1 · Case DEMO-CE-001 · Prepared at frozen time 20 April 2026 15:00 UTC · Field DEMO-F01 / zone Z2 · Crop/region assumption: maize, Iowa · Reviewer assigned: DEMO Mira Hale · Status: blocked.</p>
+<p><strong>Question:</strong> Is there enough comparable evidence to release a zone-level draft for review?</p>
+<p><strong>Source inventory:</strong> SRC-S01 and SRC-S02, synthetic soil indices 18 and 31 mg/kg with distinct sampling/issue times; SRC-H01 history placeholder; SRC-Z01 original schematic zone sketch; SRC-W01 expired weather fixture. See section 10 for exact timestamps.</p>
+<p><strong>Exception:</strong> the two soil results are not established as comparable. Method/depth context is incomplete. An average would conceal uncertainty. Weather evidence is stale at the demo clock.</p>
+<p><strong>Alternative explanations:</strong> different assay methods; different sampling depth; spatial variability; transcription error. These are hypotheses, not conclusions about a real field.</p>
+<p><strong>Proposed action:</strong> request matched sampling metadata and reviewer assessment. Withhold the proposed rate. Reassess weather source separately. No application instruction.</p>
+<p><strong>Decision:</strong> pending agronomist review. Next action: Mira to request clarification by 21 April 2026 10:00 UTC. No grower consent, equipment permission or local label review is established by this demo.</p>
+<p><strong>Export manifest:</strong> human-readable review packet only; version, source IDs, timestamps, missingness, notes and decisions included. Machine prescription export disabled. No equipment commands or proprietary vendor format claims.</p>
+<p><strong>Audit trail:</strong> intake Apr 18 → conflict flagged Apr 18 → operator note Apr 19 → reviewer assigned Apr 20. A later local demo decision appends a new event and version; original evidence remains inspectable.</p>
+<p><strong>Limitations:</strong> invented measurements and people; no observed yield, applied rates, economic results, customer commitment or regulatory clearance. Report does not establish agronomic correctness, compliance or a safe operating window.</p>
+<p><strong>Reversibility:</strong> downloadable synthetic packet has visible watermark on each page and in machine-readable metadata; visitor can reset local demo state. No file is transmitted to machinery or an outside account. Do not describe this document&#39;s sample packet as a captured working product.</p>
+<h2 id="13-pilot-ask-protocol-and-scorecard">13. Pilot ask, protocol and scorecard</h2><h3 id="copy-ready-paid-evaluation-ask">Copy-ready paid-evaluation ask</h3><p><strong>“Choose one module, one crop and one region. Bring an accountable agronomy lead, a named operator and a data owner to a discovery review. We will first agree a permissioned, blinded retrospective comparison. A paid season pilot proceeds only with a signed scope, grower consent, local review and a prespecified measurement protocol.”</strong></p>
+<p>Proposed first module: O1 Field Desk, because evidence readiness can be assessed before evaluating consequential plan drafts. This is a recommendation, not a change to the five-offer portfolio. O2 recommendations can be included in a separately scoped retrospective comparison, with agronomist review, before any broader pilot decision.</p>
+<h3 id="evaluation-sequence">Evaluation sequence</h3><ol>
+<li><strong>Qualify:</strong> record distinct budget owner, buyer segment, named operator, data owner, crop/region, selected module and willingness to pay. Count meetings and waitlist separately.</li>
+<li><strong>Authorize:</strong> procurement/legal review, grower consent, permitted field/equipment records and secure handling plan. Confirm access boundaries before transfer; public form cannot receive records.</li>
+<li><strong>Pre-register:</strong> freeze baseline, evaluator, comparison method, sample inclusion/exclusion rules, observation window, acceptance and failure thresholds in the pilot SOW before scoring.</li>
+<li><strong>Blinded retrospective:</strong> use the historical agronomist plan as comparator; hide origin of candidate/comparator where feasible, randomize order, restrict input evidence to information available at the original decision date, and record source leakage. Independent qualified agronomists rate accept/revise/reject and identify invalid recommendations. Preserve disagreements and vetoes.</li>
+<li><strong>Paid season pilot:</strong> only after signed SOW and all permission/safety gates; predefined fields and allowed records, one crop/region, named local reviewers, season-long observation. No autonomous control.</li>
+<li><strong>Review:</strong> compare input rate and yield under the agreed field protocol, record weather and management confounders, quantify missingness and services/integration effort, then decide stop, revise or expand.</li>
+</ol>
+<p>Sample size, crop-specific agronomic validity criteria, observation dates and agronomically meaningful yield margin require local expert agreement. They are deliberately not represented as validated numeric rules. These must be completed before a real pilot proceeds.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Definition / denominator</th>
+<th>Proposed acceptance or failure rule</th>
+<th>Current value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Buyer readiness</td>
+<td>Separate budget owner, operator, authorized dataset and willingness-to-pay records.</td>
+<td>All four documented, plus signed paid SOW before season pilot.</td>
+<td>Not evaluated</td>
+</tr>
+<tr>
+<td>Advisor acceptance</td>
+<td>Accept without change / all evaluable blinded draft cases; report revise/reject separately.</td>
+<td>Interview starting hypothesis ≥80%; evaluator may change before preregistration, never after seeing scores. Not a product claim.</td>
+<td>Not evaluated</td>
+</tr>
+<tr>
+<td>Invalid/unsafe recommendation rate</td>
+<td>Evaluator-defined invalid cases / all scored cases; critical cases listed individually.</td>
+<td>Proposed critical-invalid threshold 0 observed; any critical finding pauses progression. Zero in a small sample is not proof of safety. Noncritical threshold must be set locally before scoring.</td>
+<td>Not evaluated</td>
+</tr>
+<tr>
+<td>QC usefulness</td>
+<td>Correctly flagged known issues and false positives in pre-agreed reference set.</td>
+<td>Threshold agreed in SOW with denominator, missing-case policy and review cost.</td>
+<td>Not evaluated</td>
+</tr>
+<tr>
+<td>Input rate</td>
+<td>kg nutrient/ha or other correctly specified unit by allowed field/zone.</td>
+<td>Prespecified comparison; no generic reduction target.</td>
+<td>Not observed</td>
+</tr>
+<tr>
+<td>Yield</td>
+<td>Crop-appropriate mass/area with measurement method and harvest window.</td>
+<td>Prespecified comparator and locally justified margin; report uncertainty/weather confounding.</td>
+<td>Not observed</td>
+</tr>
+<tr>
+<td>Economics</td>
+<td>Observed revenue/input changes less software, agronomy service, integration and measurement costs.</td>
+<td>Sensitivity analysis, not attribution of all variation to software.</td>
+<td>Not observed</td>
+</tr>
+<tr>
+<td>Human accountability</td>
+<td>Vetoes retained; no export bypass; reviewer/decision/time captured.</td>
+<td>Any control bypass or permission failure pauses pilot.</td>
+<td>Not evaluated</td>
+</tr>
+<tr>
+<td>Paid conversion</td>
+<td>Signed paid commitments / distinct qualified primary buyers.</td>
+<td>Report cohorts and separate adjacent buyer segments; waitlist is not numerator.</td>
+<td>No demonstrated commitments</td>
+</tr>
+</tbody></table></div>
+<p><strong>Proceed gate:</strong> advisor signs paid season pilot; participating growers consent; historical comparator is available; equipment/field permissions cover proposed scope; region-specific agronomic/legal review is available; agronomist veto enforced; protocol frozen. <strong>Pause gate:</strong> missing permission, safety sign-off, comparator, or critical validity/control failure. Do not manufacture value through autonomous control.</p>
+<p><strong>Expansion hypothesis:</strong> after local validation, advisor/co-op-group expansion into additional crops and workflows may be possible where evidence transfers. Estimate potential software revenue only from verified buyer count × tested annual contract value × reachable share, with services/integration costs accounted for. Acres, fertilizer spend, equipment capex and sector losses are not software TAM. A million-dollar product remains an untested hypothesis.</p>
+<h2 id="14-lead-capture-privacy-and-access">14. Lead capture, privacy and access</h2><h3 id="pilot-fields"><code>/pilot</code> fields</h3><p>Required: work email, organization, role/budget responsibility, crop, region, selected offer, current workflow, pilot timeframe, permission to follow up about this request. Ask whether an operator/data owner can join and whether records could be authorized; names can be gathered in discovery. Optional: field/site-count range and concise question. No file upload, precise parcel locations, yield maps, pesticide details, credentials or financial records.</p>
+<p>Marketing checkbox separate and unchecked: <strong>“Send me occasional CropEvidence research and product updates.”</strong> Request checkbox: <strong>“You may contact me about this evaluation request.”</strong> Adjacent note: <strong>“Do not submit field records or confidential information here. Any request for real data will go through a human security and legal review.”</strong></p>
+<p>Form states: empty, focused, validation error, submitting, confirmed receipt, retryable failure, duplicate request, withdrawn consent. In an unconnected prototype, button says <strong>“Preview request”</strong> and confirmation says <strong>“Nothing was sent. This is a concept preview.”</strong> No “meeting booked” or “we received your request” without actual evidence from the delivery system.</p>
+<h3 id="guided-demo-and-optional-waitlist">Guided demo and optional waitlist</h3><p>Guided demo is a distinct request with module or full-suite interest, role, organization, work email and follow-up consent. Optional waitlist adds sector/site-count range, current workflow and timeframe; it does not require an account. Never gate the synthetic artifact behind marketing consent. Dedupe contacts in the restricted lead store, not analytics payloads.</p>
+<h3 id="privacy-copy-draft-for-review">Privacy copy, draft for review</h3><p><strong>“CropEvidence is a research-stage concept. The public preview uses simulated records. If a connected enquiry form is provided, we use the information you submit to review and respond to your request. Marketing updates require separate consent. Do not upload operational or confidential records. You may request correction or deletion through the verified contact route.”</strong></p>
+<p>Before actual collection, finalize controller identity, lawful basis/jurisdiction, processor list, retention period, deletion/contact process and cookie behavior with the responsible owner. This is a publication dependency, not a claim of an operating compliance program.</p>
+<p>Sign-in is visually complete but explicitly unconnected; route to the demo and access-help. Do not accept real passwords, pretend SSO is available, simulate an actual recovery email, or imply an active customer workspace.</p>
+<h2 id="15-analytics-event-plan">15. Analytics event plan</h2><p>Design specification only; no analytics have fired. Respect required consent and deletion choices. Use a separate test environment for QA. No names, emails, parcel IDs, soil values, notes, URLs containing sensitive query data or raw form answers in analytics.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Trigger</th>
+<th>Allowed properties / integrity rule</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>page_view</code></td>
+<td>Route rendered, once per navigation.</td>
+<td>Sanitized route, consented anonymous session, source/campaign allowlist.</td>
+</tr>
+<tr>
+<td><code>offer_card_view</code></td>
+<td>≥50% card visible for ≥1 second.</td>
+<td>O1–O5, route; dedupe per offer/session.</td>
+</tr>
+<tr>
+<td><code>demo_open</code></td>
+<td>Synthetic demo route successfully shown.</td>
+<td>Entry route, selected offer, demo version; never a trial-start claim.</td>
+</tr>
+<tr>
+<td><code>pilot_cta</code></td>
+<td>Actual primary CTA activation.</td>
+<td>Placement, offer selection, sanitized UTM.</td>
+</tr>
+<tr>
+<td><code>form_start</code></td>
+<td>First meaningful field interaction.</td>
+<td>Form ID only, no field value.</td>
+</tr>
+<tr>
+<td><code>form_submit</code></td>
+<td>Future connected handler acknowledges valid intake.</td>
+<td>Request ID opaque and non-identifying; consent status; do not fire on click or failure.</td>
+</tr>
+<tr>
+<td><code>meeting_booked</code></td>
+<td>Confirmed booking from future approved system/manual verified workflow.</td>
+<td>Opaque booking ID, campaign cohort; not a calendar-link click.</td>
+</tr>
+<tr>
+<td><code>demo_review_action</code></td>
+<td>Optional diagnostic: local synthetic decision.</td>
+<td>Fixed enum only, marked synthetic; not approval of a real plan.</td>
+</tr>
+</tbody></table></div>
+<p>Track distinct qualified buyers, named operators, authorized datasets, willingness to pay and signed SOWs in a permissioned evaluation register with restricted access. Do not infer these from page events. Report traffic/clicks, qualified conversations and paid commitments as separate funnels, segmented by buyer type. Use sanitized UTM source/campaign consistently; avoid fingerprinting and unauthorised identity joins.</p>
+<h2 id="16-acquisition-and-ad-variants">16. Acquisition and ad variants</h2><p>Initial channels: independent agronomists, input dealers, cooperatives, crop consultants and equipment dealers. Recruit via co-op and consultant networks, but target the independent agronomy service lead as the initial budget owner. Grower and co-op procurement remain separate. One crop/region, season-long measurement.</p>
+<p><strong>LinkedIn variant A — the job</strong></p>
+<p>Headline: <strong>“Before the zone plan, reconcile the evidence.”</strong></p>
+<p>Body: <strong>“Soil tests, field history and weather do not arrive with the same dates or context. CropEvidence is exploring a source-linked review workflow for independent agronomy leads. Inspect a fictional conflict and discuss a paid evaluation in one crop and region.”</strong></p>
+<p>Creative: original two-source comparison beside one schematic zone; visible DEMO · SIMULATED DATA.</p>
+<p><strong>LinkedIn variant B — the artifact</strong></p>
+<p>Headline: <strong>“What belongs behind a reviewed zone plan?”</strong></p>
+<p>Body: <strong>“A source timestamp. An unresolved conflict. A named reviewer. Explore CropEvidence&#39;s simulated evidence packet, then discuss whether a permissioned retrospective comparison fits your practice.”</strong></p>
+<p>Creative: original watermarked packet and locked machine-export preview. No spraying-automation footage.</p>
+<p>Both link to <code>/solutions/independent-agronomists</code> with distinct campaign values and clear pilot CTA. No claims of savings, accuracy, safety, regulatory certification or traction. No campaign launched in this workstream.</p>
+<p><strong>Capped test proposal for later approval:</strong> USD 300 total, USD 150 per variant, maximum 14 days, platform daily limits consistent with total cap; no automatic budget expansion. Review halfway through. Pause on tracking/consent failure, materially wrong-role traffic, misleading creative, or zero qualified conversations after the prespecified halfway spend. Treat this as an initial learning rule, not a statistical winner criterion. Record actual targeting, spend, clicks, qualified conversations, consented requests and CPC only after delivery. Paid seasonal commitments and permitted pilot fields matter more than signups; definitions must be fixed before comparing variants.</p>
+<h2 id="17-responsive-screenshots-and-asset-brief">17. Responsive screenshots and asset brief</h2><p><strong>Future requirement:</strong> real browser captures of the implemented deterministic demo. No AI-generated UI image qualifies as implementation evidence. Parent/project owner verifies the screenshot, brand/domain and publication status. The old mentioned concept screenshot is neither a deployed site nor a substitute for these captures.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Frame</th>
+<th>Required content</th>
+<th>Desktop / mobile composition</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Website hero</td>
+<td>CropEvidence mark, exact thesis, buyer, two CTAs, concept label and original field visual.</td>
+<td>1440px wide capture; separate 390px capture, text readable without zoom.</td>
+</tr>
+<tr>
+<td>Queue</td>
+<td>Ten records with exact 3/3/2/2 totals, owners, timestamps, states and selected CE-001.</td>
+<td>Desktop list; mobile cards preserve ID, status, owner and source affordance.</td>
+</tr>
+<tr>
+<td>Open case</td>
+<td>Field polygon, 3 zones, conflicting tests, timestamps, withheld-rate table, source pane, reviewer and next action.</td>
+<td>1440px full-screen frame; 390px mobile uses one-column case summary and accessible Map/Evidence/Review navigation.</td>
+</tr>
+<tr>
+<td>Review feedback</td>
+<td>Required reason, local decision confirmation, immutable source context, disabled machine export.</td>
+<td>No toast as sole record of decision; mobile confirmation inline.</td>
+</tr>
+<tr>
+<td>Report</td>
+<td>Packet version, source list, uncertainty, no-control boundary, no observed outcomes.</td>
+<td>Full desktop report frame and mobile-safe crop; watermark on each report/chart.</td>
+</tr>
+<tr>
+<td>Pilot record</td>
+<td>Named roles, grower consent, export permission, protocol and proposed unpaid quote.</td>
+<td>Clearly simulated; no signed customer or payment status.</td>
+</tr>
+</tbody></table></div>
+<p>Badges on every frame: <strong>DEMO — SYNTHETIC DATA</strong> and <strong>CONCEPT PREVIEW</strong>. Include source timestamps in full readable form, explicit uncertainty, named reviewer and “No equipment control.” Charts say “Illustrative” or “Not observed”; no fabricated telemetry.</p>
+<p>At 390px: minimum 16px main text and 13px metadata; essential evidence above any decorative imagery; no sideways page scroll; tables become labeled rows or intentionally bounded accessible scroll regions. Never crop out the warning, timestamp, disclosure or disabled-export reason to make a screenshot cleaner.</p>
+<p>Example alt text: <strong>“Synthetic CropEvidence case CE-001 showing a three-zone field sketch, two incompatible soil-test records for zone Z2, a withheld draft and disabled machine export.”</strong></p>
+<p>Capture log: route, fixture version, frozen clock, viewport, browser/version, motion setting, local state, filename and reviewer. Review at 100% zoom for every label/number. Suggested filenames: <code>crop-evidence-home-1440.png</code>, <code>crop-evidence-case-390.png</code>, <code>crop-evidence-report-1440.png</code>. These files are future deliverables, not claimed to exist now.</p>
+<h2 id="18-risk-and-boundary-register">18. Risk and boundary register</h2><div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Boundary</th>
+<th>Relevant constraints</th>
+<th>Website / demo behavior</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Data access</td>
+<td>Heterogeneous soil laboratory formats, private yield maps, weather sources, farm machinery access and permissions.</td>
+<td>Show source freshness/missingness; human permissions review; no public uploads or live connector claim.</td>
+</tr>
+<tr>
+<td>Physical/control</td>
+<td>Pesticide labels, local regulations, calibrated applicators, agronomist/farmer approval.</td>
+<td>Label-check required status; no safe-to-spray assurance; machine export disabled; no commands.</td>
+</tr>
+<tr>
+<td>Commercial</td>
+<td>Dealer incentives, seasonality, liability and uncertain budget ownership.</td>
+<td>Separate buyer cohorts, scoped conditional pilot proposal, explicit unvalidated prices.</td>
+</tr>
+<tr>
+<td>Evidence</td>
+<td>Strong incumbent capability context; low evidence for independent uplift.</td>
+<td>Protocol and empty results, no universal yield promise.</td>
+</tr>
+<tr>
+<td>Unanswered gaps</td>
+<td>Region-specific trials, farmer/retailer budgets, reliable source formats and viable service economics.</td>
+<td>Research backlog; do not imply resolved fit.</td>
+</tr>
+</tbody></table></div>
+<p>Global disclaimer: <strong>“CropEvidence is a research-stage concept. Product screens, organizations, people, field geometry, records and activity shown in this preview are simulated. No real field recommendation, equipment command, live integration, customer result or accepted price is represented. Any future pilot requires appropriate data permissions, qualified local review and human approval. Yield, savings and performance are not guaranteed.”</strong></p>
+<p>Copyright and attribution: original text, diagrams, fictional organizations and synthetic records. License atmospheric imagery and fonts. Do not copy competitor UI, maps, vendor copy, regulator marks or customer identifiers. Factual sources are linked without implying endorsement.</p>
+<h2 id="19-build-handoff-and-quality-gates">19. Build handoff and quality gates</h2><h3 id="what-is-complete-in-this-specification">What is complete in this specification</h3><p>Research/reference notes; proposed brand system; complete route map; copy-ready hero and five offer cards; page/hero/section plans; horizontal and vertical motion specification; synthetic workflow and ten-record fixture plan; data dictionary; sample packet; pilot ask and scorecard; disclaimer; form/analytics/ad plans; screenshot brief; coverage matrix.</p>
+<h3 id="future-execution-order">Future execution order</h3><ol>
+<li>Confirm visual territory and crop/region for actual recruitment; verify name/domain/trademark and supplied profile/contact information.</li>
+<li>Create original logo/favicon assets, palette/type/icon tokens and license inventory before high-fidelity pages.</li>
+<li>Build source-consistent demo states and editable diagrams, then page wireframes and responsive design.</li>
+<li>Implement all planned routes, meaningful forms/auth boundaries, native-scroll motion and reduced-motion states.</li>
+<li>Verify copy/claims, links, forms, states, data consistency, accessibility and performance; capture real desktop/mobile screenshots.</li>
+<li>Connect lead handling only with a finalized privacy/data process; obtain approvals for real records separately.</li>
+<li>Authorized GitHub push → Vercel deployment → owned custom domain/DNS → final public review. These remain future tasks.</li>
+</ol>
+<h3 id="acceptance-evidence-required-for-the-build">Acceptance evidence required for the build</h3><ul>
+<li>Five products appear on homepage, menu, portfolio, individual routes and intake; exact scopes and price units match section 05.</li>
+<li>All planned routes have useful content and working navigation; no dead CTA, unrelated link, empty product page or fabricated profile.</li>
+<li>Original logo/favicons present; default icons, Lovable/builder artifacts and third-party marks removed.</li>
+<li>Synthetic label visible in hero, every demo route, every row and every export; no real records, false live status or operating-product claim.</li>
+<li>Ten fixture rows and 3/3/2/2 default totals agree; events are chronological; source panes resolve; null rate remains withheld; the numeric Z1 example stays labeled unvalidated; no executed application rows. Local decisions recompute counts, and reset restores the default.</li>
+<li>Machine export invariant remains false before/after every simulated review and direct-route reload; reviewer packet retains watermark; reset works.</li>
+<li>Qualification distinguishes budget owner/operator/dataset/willingness to pay; consent checkboxes separate; prototype cannot falsely claim delivery.</li>
+<li>Test widths 1440, 1280, 1024, 768, 390 and 320; short landscape; 200% zoom; keyboard; touch; reduced motion and preference changes; up/down scroll and direct anchors.</li>
+<li>No trapped scroll, offscreen focused links, clipped tables, invisible copy, animation-dependent disclosure or sticky overlay covering warnings.</li>
+<li>Contrast and meaningful status labels checked; focus/hover/pressed/loading/disabled/error/success states verified; diagrams accessible as text/table.</li>
+<li>Production build, runtime console, internal links, image/font loading, metadata, social preview and favicon checked. Lab and field performance distinguished.</li>
+<li>Real screenshots inspected at 100%; no proprietary screenshots, copied maps, customer identifiers or generated evidence of a live integration.</li>
+<li>Evaluation comparator, evaluator, metric definitions, dates and thresholds finalized before a real pilot. No paid conversion reported without actual signed commitment.</li>
+</ul>
+<h3 id="internal-tracking-handoff-no-notion-access">Internal tracking handoff — no Notion access</h3><p>Parent-managed fields to create later: idea number; working title; buyer/budget owner; operator; hypothesis; five offer IDs; price hypotheses; source links; contact consent; interview date; permissioned dataset status; baseline/evaluator/threshold; paid SOW status; integration owner; safety boundary; regulatory review; demo URL; screenshot verification; name/domain verification; traffic cohort/spend; qualified meetings; decision; next action. Track co-op/grower demand separately. No profile/account creation is authorized by including this register.</p>
+<h2 id="20-brief-to-website-traceability">20. Brief-to-website traceability</h2><p>Repeated brief requirements are consolidated below without dropping their substance. “Future acceptance” means a build/pilot condition, not evidence of completion today.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Brief heading / requirement</th>
+<th>Placement</th>
+<th>Specification / future acceptance</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Buyer/pain and initial accountability owner</td>
+<td>Hero, Solutions, Pilot</td>
+<td>Sections 02, 07, 14; primary buyer named, operator/data owner recruited.</td>
+</tr>
+<tr>
+<td>Competitors/substitutes and no new spraying claim</td>
+<td>Why change, Sources, FAQ</td>
+<td>Sections 02–03; primary links, no integration endorsement.</td>
+</tr>
+<tr>
+<td>Acquisition / one crop-region / season outcomes</td>
+<td>Solutions, Evaluation; internal campaign plan</td>
+<td>Sections 13, 16.</td>
+</tr>
+<tr>
+<td>Five sellable offers</td>
+<td>Home, Products menu/index, five pages, Pricing, intake</td>
+<td>Sections 05–08; O1–O5 each intact.</td>
+</tr>
+<tr>
+<td>Actual field polygon demo cue / timestamps / conflict / approved prescription preview</td>
+<td>Demo case and screenshot plan</td>
+<td>Fictional but concretely rendered polygon; local simulated sign-off only; export remains disabled, sections 10, 17.</td>
+</tr>
+<tr>
+<td>Demand test / paid seasonal commitment</td>
+<td>Evaluation, Pilot</td>
+<td>Blinded retrospective, permitted exports/records, sign-off, prespecified protocol, section 13.</td>
+</tr>
+<tr>
+<td>Expansion / no acreage-spend TAM</td>
+<td>Evaluation FAQ; internal business hypothesis</td>
+<td>Section 13; buyer-based bottom-up sizing.</td>
+</tr>
+<tr>
+<td>Data / physical / commercial barriers / evidence gap</td>
+<td>Trust, Integrations, Evaluation</td>
+<td>Section 18; separately stated constraints.</td>
+</tr>
+<tr>
+<td>Concept 39, synthetic-only, non-operating status</td>
+<td>Hero, demo headers, footer, internal record</td>
+<td>Sections 01, 07, 10, 18.</td>
+</tr>
+<tr>
+<td>Proposed Crop Waypoint name/domain history</td>
+<td>Internal naming note</td>
+<td>Section 01; superseded by user-supplied CropEvidence, no ownership claim.</td>
+</tr>
+<tr>
+<td>Research-only / no demand, revenue, customer, deployment or accepted pricing evidence</td>
+<td>Results, Pricing, Company, disclosure</td>
+<td>Sections 01–02, 05, 13, 18.</td>
+</tr>
+<tr>
+<td>Tagline, basic info, vision, mission, problem</td>
+<td>Hero, Company, Why change</td>
+<td>Sections 02, 07–08; exact thesis preserved.</td>
+</tr>
+<tr>
+<td>Solutions and five separate quotes</td>
+<td>Product family, Pricing</td>
+<td>Section 05; no conversion to CRM tabs.</td>
+</tr>
+<tr>
+<td>Source-linked case / alternative explanations / annotations / packet</td>
+<td>Platform, Demo, Resources packet</td>
+<td>Sections 10–12.</td>
+</tr>
+<tr>
+<td>Validation site and app experience / mobile provenance</td>
+<td>Home and Demo</td>
+<td>Sections 07, 10, 17.</td>
+</tr>
+<tr>
+<td>LinkedIn GTM and fictional map review</td>
+<td>Internal acquisition plan / role-specific landing page</td>
+<td>Section 16; no campaign execution.</td>
+</tr>
+<tr>
+<td>Million-dollar possibility remains hypothesis</td>
+<td>Evaluation/business appendix</td>
+<td>Section 13; no sector spend as revenue.</td>
+</tr>
+<tr>
+<td>Initial MVP read-only scope / reversible export</td>
+<td>Demo, Trust</td>
+<td>Sections 10–12; no production connectors/control.</td>
+</tr>
+<tr>
+<td>Validation website full narrative / optional waitlist</td>
+<td>Homepage, Evaluation, Pilot</td>
+<td>Sections 06–07, 14.</td>
+</tr>
+<tr>
+<td>Fake CRM account/roles/case/activity/task/deal</td>
+<td>Demo case and separate Demo pilot record</td>
+<td>Section 10; invented names, permission status, unsigned quote.</td>
+</tr>
+<tr>
+<td>Validation-first funnel / distinct readiness counts</td>
+<td>Evaluation and internal register</td>
+<td>Sections 06, 13, 15.</td>
+</tr>
+<tr>
+<td>Product screenshot parent verification / readable desktop/mobile</td>
+<td>Future capture handoff</td>
+<td>Section 17; no generated product evidence.</td>
+</tr>
+<tr>
+<td>Fake CRM rules / no sensitive records / export labels / no writeback</td>
+<td>Demo and Trust</td>
+<td>Sections 10–12, 18.</td>
+</tr>
+<tr>
+<td>Ad and traffic tests / capped spend / qualified meetings</td>
+<td>Internal GTM plan</td>
+<td>Section 16; truth-based variants and proposed pause rule.</td>
+</tr>
+<tr>
+<td>Validation metrics / baseline / evaluator / threshold</td>
+<td>Evaluation / Results / SOW direction</td>
+<td>Section 13; weather confounding and no outcomes yet.</td>
+</tr>
+<tr>
+<td>Build decision / pause / agronomist veto</td>
+<td>Evaluation / Trust</td>
+<td>Sections 13, 18–19.</td>
+</tr>
+<tr>
+<td>Notion tracking fields; no Notion activity</td>
+<td>Internal handoff only</td>
+<td>Section 19; every requested field retained.</td>
+</tr>
+<tr>
+<td>Builder conversion concept / deterministic conflict / local review</td>
+<td>Demo / Pilot</td>
+<td>Sections 10, 14; no production software authorization.</td>
+</tr>
+<tr>
+<td>Required deliverables: hero, offers, workflow, dictionary, packet, pilot, scorecard, disclaimer, analytics, ads, screenshot</td>
+<td>This document and companion reader</td>
+<td>Sections 05, 07, 10–18.</td>
+</tr>
+<tr>
+<td>Original prescribed page-section order</td>
+<td>Homepage expanded for master guide</td>
+<td>Section 07 preserves hero → pain/evidence → five offers → artifact → evaluation → boundaries → pilot → privacy/sources.</td>
+</tr>
+<tr>
+<td>Screenshot requirements / no proprietary logo/customer identifiers</td>
+<td>Future QA</td>
+<td>Sections 17–19.</td>
+</tr>
+<tr>
+<td>Copyright rules / original maps/text / attribution</td>
+<td>Asset library / Sources</td>
+<td>Sections 03–04, 18.</td>
+</tr>
+<tr>
+<td>Waitlist / seven events / UTMs / dedupe / deletion</td>
+<td>Forms, Privacy, analytics spec</td>
+<td>Sections 14–15.</td>
+</tr>
+<tr>
+<td>Quality checklist before pushing</td>
+<td>Build acceptance</td>
+<td>Section 19; evidence needed, not claimed passed.</td>
+</tr>
+<tr>
+<td>Definition of done / no website or Notion activity now</td>
+<td>Scope and handoff</td>
+<td>Sections 01, 19; spec done separate from pilot/build done.</td>
+</tr>
+<tr>
+<td>Mentioned concept screenshot is not deployed site</td>
+<td>Internal artifact register</td>
+<td>Sections 01, 17; missing attachment acknowledged.</td>
+</tr>
+<tr>
+<td>Employee handoff / Category D / select one pilot module</td>
+<td>Internal scope and product portfolio</td>
+<td>Sections 01, 05, 13.</td>
+</tr>
+<tr>
+<td>Five optional product names under brand</td>
+<td>Product inventory</td>
+<td>Section 05 preserves Field Desk, Review, Proof, Signal, Report.</td>
+</tr>
+<tr>
+<td>8–12 consistent records / pending, blocked, complete, rejected / failed recommendation</td>
+<td>Demo fixture</td>
+<td>Section 10 supplies ten rows with two rejected drafts.</td>
+</tr>
+<tr>
+<td>Real browser captures at 1440 and 390 / queue, record, sources, action, report</td>
+<td>Future screenshot brief</td>
+<td>Section 17.</td>
+</tr>
+<tr>
+<td>Handoff acceptance: navigation, early access, consent, sources, pages, pricing, screenshots</td>
+<td>Future build verification</td>
+<td>Sections 06–09, 14–19.</td>
+</tr>
+<tr>
+<td>Master guide: multi-page depth, branding, font/icon system, scroll variation, auth, social footer</td>
+<td>Full architecture and design system</td>
+<td>Sections 04, 06–09, 19.</td>
+</tr>
+</tbody></table></div>
+<h2 id="21-decisions-still-needed-before-implementation-or-publication">21. Decisions still needed before implementation or publication</h2><p>These do not block this research/IA deliverable: final brand approval; name/domain/trademark review; actual pilot crop/region; selected first pilot module; locally qualified evaluator; product-fixture agronomy review if adding numeric rates; licensed imagery; verified company/contact/social information; lead-handler/privacy ownership; final SOW thresholds; target GitHub/Vercel accounts and owned domain. The missing reference video can refine the motion direction later without changing the coverage already planned.</p>
+<h2 id="22-primary-source-register">22. Primary-source register</h2><p>Visual observations and research findings are distinguished in section 03. These links support category, implementation or licensing context; none establishes CropEvidence validation.</p>
+<ul>
+<li><a href="https://watershed.com/en-GB">Watershed homepage</a> — directly inspected visual reference.</li>
+<li><a href="https://linear.app/">Linear homepage</a> and <a href="https://linear.app/intake">Intake</a> — directly inspected interface and product-page references.</li>
+<li><a href="https://www.apple.com/airpods-pro/">Apple AirPods Pro</a> — partially rendered browser reference; playback limitations recorded.</li>
+<li><a href="https://gsap.com/scroll/">GSAP scroll showcase</a> — directly inspected pin/scrub example.</li>
+<li><a href="https://stripe.com/payments">Stripe Payments</a> — researched content reference, no live motion verification.</li>
+<li><a href="https://www.regrow.ag/platform">Regrow platform</a> — researched agriculture/platform context.</li>
+<li><a href="https://cropx.com/solutions/enterprise-farm-management/">CropX enterprise management</a> and <a href="https://cropx.com/variable-rate-application/">variable-rate application</a> — adjacent capabilities.</li>
+<li><a href="https://www.deere.com/en-us/products-solutions/sprayers-and-applicators/see-spray-select">John Deere See &amp; Spray Select</a> — established machinery-side targeted application context.</li>
+<li><a href="https://gsap.com/docs/v3/Plugins/ScrollTrigger/">GSAP ScrollTrigger</a> and <a href="https://gsap.com/docs/v3/GSAP/gsap.matchMedia()/">matchMedia</a> — proposed implementation behavior and responsive cleanup.</li>
+<li><a href="https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html">W3C animation from interactions</a> and <a href="https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html">pause, stop, hide</a> — motion requirements; not a conformance audit.</li>
+<li><a href="https://github.com/Instrument/instrument-serif">Instrument Serif source/license</a>, <a href="https://github.com/google/fonts/blob/main/ofl/manrope/OFL.txt">Manrope OFL distribution</a>, <a href="https://www.sharanda.com/manrope">Manrope creator&#39;s current version</a>, <a href="https://github.com/IBM/plex">IBM Plex source/license</a> — proposed font sourcing and version-specific licensing.</li>
+</ul>
+<p>Source input: STARTUP_WEBSITE_MASTER_GUIDE.md supplied by the user, read in full; the complete Concept 39 brief supplied in chat. No unseen video or screenshot was treated as inspected evidence.</p>
+</article><footer>CropEvidence · Planning handoff · 26 October 2026<br>All proposed product behavior, prices and samples are explicitly unvalidated. See scope, source register and acceptance gates.</footer></main></body></html>

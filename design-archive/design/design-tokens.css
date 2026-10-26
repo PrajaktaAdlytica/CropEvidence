@@ -1,0 +1,19 @@
+:root {
+  --ce-paper: #F7F4EA;
+  --ce-olive: #39472C;
+  --ce-matcha: #D5E1BC;
+  --ce-blush: #F1CCD6;
+  --ce-sky: #CCDFEC;
+  --ce-apricot: #F3CEAD;
+  --ce-coral: #A8433C;
+  --ce-warning-ink: #77342D;
+  --ce-white: #FFFFFF;
+  --ce-muted-ink: #535C4B;
+  --ce-font-display: 'Instrument Serif', Georgia, serif;
+  --ce-font-body: 'Manrope', system-ui, sans-serif;
+  --ce-radius-card: 12px;
+  --ce-max-content: 1280px;
+  --ce-button-height: 48px;
+  --ce-motion-hover: 200ms;
+  --ce-motion-reveal: 650ms;
+}

@@ -1,0 +1,536 @@
+[
+  {
+    "clippedText": [],
+    "grid": "280px",
+    "overflow": 0,
+    "route": "/",
+    "width": 320
+  },
+  {
+    "clippedText": [],
+    "grid": "350px",
+    "overflow": 0,
+    "route": "/",
+    "width": 390
+  },
+  {
+    "clippedText": [],
+    "grid": "508px",
+    "overflow": 0,
+    "route": "/",
+    "width": 556
+  },
+  {
+    "clippedText": [],
+    "grid": "156.719px 156.727px 156.719px 156.727px",
+    "overflow": 0,
+    "route": "/",
+    "width": 768
+  },
+  {
+    "clippedText": [],
+    "grid": "131.969px 131.969px 131.969px 131.977px 131.969px 131.969px",
+    "overflow": 0,
+    "route": "/",
+    "width": 1024
+  },
+  {
+    "clippedText": [],
+    "grid": "190px 190px 190px 190px 190px 190px",
+    "overflow": 0,
+    "route": "/",
+    "width": 1440
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/products/field-review",
+    "width": 390
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/platform",
+    "width": 390
+  },
+  {
+    "clippedText": [
+      {
+        "class": "",
+        "left": 21,
+        "right": 671,
+        "text": "MeasureProposed definitionEvidenceAdvisor acceptanceAccepted"
+      }
+    ],
+    "overflow": 0,
+    "route": "/evaluation",
+    "width": 390
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/pricing",
+    "width": 390
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/pilot/",
+    "width": 390
+  },
+  {
+    "clippedText": [
+      {
+        "class": "",
+        "left": 21,
+        "right": 871,
+        "text": "Case / fieldReviewerExceptionStateNext actionDEMO-CE-001DEMO"
+      }
+    ],
+    "overflow": 0,
+    "route": "/demo/",
+    "width": 390
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/sign-in/",
+    "width": 390
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/resources/evidence-packet/",
+    "width": 390
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/products/field-review",
+    "width": 320
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/evaluation",
+    "width": 320
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/pricing",
+    "width": 320
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/pilot/",
+    "width": 320
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/demo/",
+    "width": 320
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/sign-in/",
+    "width": 320
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/products/field-review",
+    "width": 768
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/evaluation",
+    "width": 768
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/pricing",
+    "width": 768
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/pilot/",
+    "width": 768
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/demo/",
+    "width": 768
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/sign-in/",
+    "width": 768
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/products/field-review",
+    "width": 1440
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/evaluation",
+    "width": 1440
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/pricing",
+    "width": 1440
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/pilot/",
+    "width": 1440
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/demo/",
+    "width": 1440
+  },
+  {
+    "clippedText": [],
+    "overflow": 0,
+    "route": "/sign-in/",
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/products",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/products/field-desk",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/products/field-proof",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/products/field-signal",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/products/field-report",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/why-change",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/solutions",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/solutions/independent-agronomists",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/company/",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/trust",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/features",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/integrations",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/results",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/resources",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/resources/pilot-protocol",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/resources/sources",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/request-demo",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/contact",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/access-help",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/legal/privacy",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/legal/terms",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/accessibility",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/demo/pilot",
+    "textOverflow": [],
+    "width": 390
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/products",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/products/field-desk",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/products/field-proof",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/products/field-signal",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/products/field-report",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/why-change",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/solutions",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/solutions/independent-agronomists",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/company/",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/trust",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/features",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/integrations",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/results",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/resources",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/resources/pilot-protocol",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/resources/sources",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/request-demo",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/contact",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/access-help",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/legal/privacy",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/legal/terms",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/accessibility",
+    "textOverflow": [],
+    "width": 1440
+  },
+  {
+    "brokenImages": [],
+    "overflow": 0,
+    "route": "/demo/pilot",
+    "textOverflow": [],
+    "width": 1440
+  }
+]

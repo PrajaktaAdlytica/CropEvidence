@@ -1,0 +1,26 @@
+[
+  {
+    "headerTop": 0,
+    "headingTop": 462,
+    "opacity": "1",
+    "stage": "down / readable",
+    "transform": "matrix(1, 0, 0, 1, 0, 0)",
+    "y": 600
+  },
+  {
+    "headerTop": 0,
+    "headingTop": -252.3000030517578,
+    "opacity": "0.08",
+    "stage": "down / left viewport",
+    "transform": "matrix(1, 0, 0, 1, 0, -14.3)",
+    "y": 1300
+  },
+  {
+    "headerTop": 0,
+    "headingTop": 462,
+    "opacity": "1",
+    "stage": "up / readable again",
+    "transform": "matrix(1, 0, 0, 1, 0, 0)",
+    "y": 600
+  }
+]
