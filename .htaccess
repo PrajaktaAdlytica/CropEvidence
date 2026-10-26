@@ -1,0 +1,21 @@
+# CropEvidence static SPA, served by Apache/LiteSpeed on PHP/HTML hosting.
+DirectoryIndex index.html
+Options -Indexes -MultiViews
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Never expose deployment metadata; keep ACME verification reachable.
+  RewriteRule (^|/)\.(?!well-known/) - [F,L]
+  # Missing assets should be 404s, not HTML responses masquerading as JS/images.
+  RewriteRule ^(?:assets|brand|fonts|icons)/ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  <Files "index.html">
+    Header set Cache-Control "no-cache"
+  </Files>
+</IfModule>
+
